@@ -1,0 +1,297 @@
+2024-02-26 14:12:00,596 INFO    StreamThr :44234 [internal.py:wandb_internal():86] W&B internal server running at pid: 44234, started at: 2024-02-26 14:12:00.587054
+2024-02-26 14:12:00,603 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: status
+2024-02-26 14:12:00,667 INFO    WriterThread:44234 [datastore.py:open_for_write():87] open: /mnt/c/Users/debor/Desktop/My_First_LLM_app/RAG/Build-Your-Own-RAG-System/AI-Engineering/Week 2/Day 1/wandb/run-20240226_141200-7k0idmj4/run-7k0idmj4.wandb
+2024-02-26 14:12:00,676 DEBUG   SenderThread:44234 [sender.py:send():382] send: header
+2024-02-26 14:12:01,337 DEBUG   SenderThread:44234 [sender.py:send():382] send: run
+2024-02-26 14:12:01,995 INFO    SenderThread:44234 [dir_watcher.py:__init__():211] watching files in: /mnt/c/Users/debor/Desktop/My_First_LLM_app/RAG/Build-Your-Own-RAG-System/AI-Engineering/Week 2/Day 1/wandb/run-20240226_141200-7k0idmj4/files
+2024-02-26 14:12:01,996 INFO    SenderThread:44234 [sender.py:_start_run_threads():1136] run started: 7k0idmj4 with start time 1708956720.590185
+2024-02-26 14:12:02,031 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: check_version
+2024-02-26 14:12:02,032 DEBUG   SenderThread:44234 [sender.py:send_request():409] send_request: check_version
+2024-02-26 14:12:02,320 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: run_start
+2024-02-26 14:12:02,329 DEBUG   HandlerThread:44234 [system_info.py:__init__():27] System info init
+2024-02-26 14:12:02,331 DEBUG   HandlerThread:44234 [system_info.py:__init__():42] System info init done
+2024-02-26 14:12:02,332 INFO    HandlerThread:44234 [system_monitor.py:start():194] Starting system monitor
+2024-02-26 14:12:02,333 INFO    SystemMonitor:44234 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-02-26 14:12:02,334 INFO    HandlerThread:44234 [system_monitor.py:probe():214] Collecting system info
+2024-02-26 14:12:02,336 INFO    SystemMonitor:44234 [interfaces.py:start():190] Started cpu monitoring
+2024-02-26 14:12:02,340 INFO    SystemMonitor:44234 [interfaces.py:start():190] Started disk monitoring
+2024-02-26 14:12:02,347 INFO    SystemMonitor:44234 [interfaces.py:start():190] Started memory monitoring
+2024-02-26 14:12:02,349 INFO    SystemMonitor:44234 [interfaces.py:start():190] Started network monitoring
+2024-02-26 14:12:02,364 DEBUG   HandlerThread:44234 [system_info.py:probe():151] Probing system
+2024-02-26 14:12:02,468 DEBUG   HandlerThread:44234 [system_info.py:_probe_git():136] Probing git
+2024-02-26 14:12:02,684 DEBUG   HandlerThread:44234 [system_info.py:_probe_git():144] Probing git done
+2024-02-26 14:12:02,685 DEBUG   HandlerThread:44234 [system_info.py:probe():199] Probing system done
+2024-02-26 14:12:02,685 DEBUG   HandlerThread:44234 [system_monitor.py:probe():223] {'os': 'Linux-5.15.133.1-microsoft-standard-WSL2-x86_64-with-glibc2.35', 'python': '3.11.7', 'heartbeatAt': '2024-02-26T14:12:02.365320', 'startedAt': '2024-02-26T14:12:00.362491', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'RAQA Assignment.ipynb', 'codePathLocal': 'RAQA Assignment.ipynb', 'git': {'remote': 'https://github.com/AI-Maker-Space/AI-Engineering', 'commit': 'fe191f7105c87f41a5e51ce7eba64740e74ffacb'}, 'email': 'deboramachadoandrade@gmail.com', 'root': '/mnt/c/Users/debor/Desktop/My_First_LLM_app/RAG/Build-Your-Own-RAG-System/AI-Engineering', 'host': 'LAPTOP-9SHDG8K4', 'username': 'deboramachadoandrade', 'executable': '/home/deboramachadoandrade/anaconda3/envs/llmops-course/bin/python', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 2112.006, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2112.006, 'min': 0.0, 'max': 0.0}, {'current': 2112.006, 'min': 0.0, 'max': 0.0}, {'current': 2112.006, 'min': 0.0, 'max': 0.0}, {'current': 2112.006, 'min': 0.0, 'max': 0.0}, {'current': 2112.006, 'min': 0.0, 'max': 0.0}, {'current': 2112.006, 'min': 0.0, 'max': 0.0}, {'current': 2112.006, 'min': 0.0, 'max': 0.0}, {'current': 2112.006, 'min': 0.0, 'max': 0.0}], 'disk': {'/': {'total': 250.92389297485352, 'used': 13.25372314453125}}, 'memory': {'total': 3.734355926513672}}
+2024-02-26 14:12:02,686 INFO    HandlerThread:44234 [system_monitor.py:probe():224] Finished collecting system info
+2024-02-26 14:12:02,686 INFO    HandlerThread:44234 [system_monitor.py:probe():227] Publishing system info
+2024-02-26 14:12:02,687 DEBUG   HandlerThread:44234 [system_info.py:_save_conda():208] Saving list of conda packages installed into the current environment
+2024-02-26 14:12:03,004 INFO    Thread-12 :44234 [dir_watcher.py:_on_file_created():271] file/dir created: /mnt/c/Users/debor/Desktop/My_First_LLM_app/RAG/Build-Your-Own-RAG-System/AI-Engineering/Week 2/Day 1/wandb/run-20240226_141200-7k0idmj4/files/conda-environment.yaml
+2024-02-26 14:12:35,134 DEBUG   HandlerThread:44234 [system_info.py:_save_conda():220] Saving conda packages done
+2024-02-26 14:12:35,144 INFO    HandlerThread:44234 [system_monitor.py:probe():229] Finished publishing system info
+2024-02-26 14:12:35,157 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: status_report
+2024-02-26 14:12:35,158 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-26 14:12:35,159 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: status_report
+2024-02-26 14:12:35,161 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-26 14:12:35,164 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: status_report
+2024-02-26 14:12:35,165 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-26 14:12:35,166 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: status_report
+2024-02-26 14:12:35,166 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-26 14:12:35,167 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: status_report
+2024-02-26 14:12:35,168 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-26 14:12:35,169 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: status_report
+2024-02-26 14:12:35,169 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: python_packages
+2024-02-26 14:12:35,170 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: stop_status
+2024-02-26 14:12:35,171 DEBUG   SenderThread:44234 [sender.py:send_request():409] send_request: python_packages
+2024-02-26 14:12:35,171 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-26 14:12:35,174 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: pause
+2024-02-26 14:12:35,175 INFO    HandlerThread:44234 [handler.py:handle_request_pause():708] stopping system metrics thread
+2024-02-26 14:12:35,180 INFO    HandlerThread:44234 [system_monitor.py:finish():203] Stopping system monitor
+2024-02-26 14:12:35,181 DEBUG   SystemMonitor:44234 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-02-26 14:12:35,182 DEBUG   SystemMonitor:44234 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-02-26 14:12:35,183 DEBUG   SystemMonitor:44234 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-02-26 14:12:35,184 INFO    HandlerThread:44234 [interfaces.py:finish():202] Joined cpu monitor
+2024-02-26 14:12:35,186 DEBUG   SenderThread:44234 [sender.py:send_request():409] send_request: stop_status
+2024-02-26 14:12:35,187 INFO    HandlerThread:44234 [interfaces.py:finish():202] Joined disk monitor
+2024-02-26 14:12:35,194 INFO    HandlerThread:44234 [interfaces.py:finish():202] Joined memory monitor
+2024-02-26 14:12:35,196 INFO    HandlerThread:44234 [interfaces.py:finish():202] Joined network monitor
+2024-02-26 14:12:35,197 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: resume
+2024-02-26 14:12:35,198 INFO    HandlerThread:44234 [handler.py:handle_request_resume():699] starting system metrics thread
+2024-02-26 14:12:35,199 INFO    HandlerThread:44234 [system_monitor.py:start():194] Starting system monitor
+2024-02-26 14:12:35,200 INFO    SystemMonitor:44234 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-02-26 14:12:35,200 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: pause
+2024-02-26 14:12:35,202 INFO    SystemMonitor:44234 [interfaces.py:start():190] Started cpu monitoring
+2024-02-26 14:12:35,202 INFO    HandlerThread:44234 [handler.py:handle_request_pause():708] stopping system metrics thread
+2024-02-26 14:12:35,204 INFO    SystemMonitor:44234 [interfaces.py:start():190] Started disk monitoring
+2024-02-26 14:12:35,205 INFO    HandlerThread:44234 [system_monitor.py:finish():203] Stopping system monitor
+2024-02-26 14:12:35,207 INFO    SystemMonitor:44234 [interfaces.py:start():190] Started memory monitoring
+2024-02-26 14:12:35,211 INFO    HandlerThread:44234 [interfaces.py:finish():202] Joined cpu monitor
+2024-02-26 14:12:35,213 DEBUG   SystemMonitor:44234 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-02-26 14:12:35,217 DEBUG   SystemMonitor:44234 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-02-26 14:12:35,217 INFO    HandlerThread:44234 [interfaces.py:finish():202] Joined disk monitor
+2024-02-26 14:12:35,218 DEBUG   SystemMonitor:44234 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-02-26 14:12:35,218 INFO    HandlerThread:44234 [interfaces.py:finish():202] Joined memory monitor
+2024-02-26 14:12:35,221 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: resume
+2024-02-26 14:12:35,221 INFO    HandlerThread:44234 [handler.py:handle_request_resume():699] starting system metrics thread
+2024-02-26 14:12:35,222 INFO    HandlerThread:44234 [system_monitor.py:start():194] Starting system monitor
+2024-02-26 14:12:35,223 INFO    SystemMonitor:44234 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-02-26 14:12:35,224 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: pause
+2024-02-26 14:12:35,225 INFO    SystemMonitor:44234 [interfaces.py:start():190] Started cpu monitoring
+2024-02-26 14:12:35,226 INFO    HandlerThread:44234 [handler.py:handle_request_pause():708] stopping system metrics thread
+2024-02-26 14:12:35,229 INFO    SystemMonitor:44234 [interfaces.py:start():190] Started disk monitoring
+2024-02-26 14:12:35,229 INFO    HandlerThread:44234 [system_monitor.py:finish():203] Stopping system monitor
+2024-02-26 14:12:35,231 INFO    SystemMonitor:44234 [interfaces.py:start():190] Started memory monitoring
+2024-02-26 14:12:35,233 DEBUG   SystemMonitor:44234 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-02-26 14:12:35,234 INFO    HandlerThread:44234 [interfaces.py:finish():202] Joined cpu monitor
+2024-02-26 14:12:35,234 DEBUG   SystemMonitor:44234 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-02-26 14:12:35,237 DEBUG   SystemMonitor:44234 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-02-26 14:12:35,239 INFO    HandlerThread:44234 [interfaces.py:finish():202] Joined disk monitor
+2024-02-26 14:12:35,239 INFO    HandlerThread:44234 [interfaces.py:finish():202] Joined memory monitor
+2024-02-26 14:12:35,240 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: resume
+2024-02-26 14:12:35,241 INFO    HandlerThread:44234 [handler.py:handle_request_resume():699] starting system metrics thread
+2024-02-26 14:12:35,241 INFO    HandlerThread:44234 [system_monitor.py:start():194] Starting system monitor
+2024-02-26 14:12:35,242 INFO    SystemMonitor:44234 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-02-26 14:12:35,244 INFO    SystemMonitor:44234 [interfaces.py:start():190] Started cpu monitoring
+2024-02-26 14:12:35,246 INFO    SystemMonitor:44234 [interfaces.py:start():190] Started disk monitoring
+2024-02-26 14:12:35,248 INFO    SystemMonitor:44234 [interfaces.py:start():190] Started memory monitoring
+2024-02-26 14:12:35,250 INFO    SystemMonitor:44234 [interfaces.py:start():190] Started network monitoring
+2024-02-26 14:12:35,368 DEBUG   SenderThread:44234 [sender.py:send():382] send: telemetry
+2024-02-26 14:12:35,369 DEBUG   SenderThread:44234 [sender.py:send():382] send: files
+2024-02-26 14:12:35,370 INFO    SenderThread:44234 [sender.py:_save_file():1403] saving file wandb-metadata.json with policy now
+2024-02-26 14:12:35,385 DEBUG   SenderThread:44234 [sender.py:send():382] send: stats
+2024-02-26 14:12:35,386 DEBUG   SenderThread:44234 [sender.py:send():382] send: stats
+2024-02-26 14:12:35,392 DEBUG   SenderThread:44234 [sender.py:send():382] send: stats
+2024-02-26 14:12:35,406 INFO    Thread-12 :44234 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/c/Users/debor/Desktop/My_First_LLM_app/RAG/Build-Your-Own-RAG-System/AI-Engineering/Week 2/Day 1/wandb/run-20240226_141200-7k0idmj4/files/conda-environment.yaml
+2024-02-26 14:12:35,411 INFO    Thread-12 :44234 [dir_watcher.py:_on_file_created():271] file/dir created: /mnt/c/Users/debor/Desktop/My_First_LLM_app/RAG/Build-Your-Own-RAG-System/AI-Engineering/Week 2/Day 1/wandb/run-20240226_141200-7k0idmj4/files/wandb-metadata.json
+2024-02-26 14:12:35,416 INFO    Thread-12 :44234 [dir_watcher.py:_on_file_created():271] file/dir created: /mnt/c/Users/debor/Desktop/My_First_LLM_app/RAG/Build-Your-Own-RAG-System/AI-Engineering/Week 2/Day 1/wandb/run-20240226_141200-7k0idmj4/files/requirements.txt
+2024-02-26 14:12:36,317 INFO    wandb-upload_0:44234 [upload_job.py:push():131] Uploaded file /tmp/tmpok3h42cjwandb/wze15z4i-wandb-metadata.json
+2024-02-26 14:12:36,395 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: status_report
+2024-02-26 14:12:36,599 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-26 14:12:36,604 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: pause
+2024-02-26 14:12:36,605 DEBUG   SenderThread:44234 [sender.py:send():382] send: history
+2024-02-26 14:12:36,605 INFO    HandlerThread:44234 [handler.py:handle_request_pause():708] stopping system metrics thread
+2024-02-26 14:12:36,606 DEBUG   SenderThread:44234 [sender.py:send_request():409] send_request: summary_record
+2024-02-26 14:12:36,607 INFO    HandlerThread:44234 [system_monitor.py:finish():203] Stopping system monitor
+2024-02-26 14:12:36,613 DEBUG   SystemMonitor:44234 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-02-26 14:12:36,614 INFO    HandlerThread:44234 [interfaces.py:finish():202] Joined cpu monitor
+2024-02-26 14:12:36,615 DEBUG   SystemMonitor:44234 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-02-26 14:12:36,616 INFO    HandlerThread:44234 [interfaces.py:finish():202] Joined disk monitor
+2024-02-26 14:12:36,616 DEBUG   SystemMonitor:44234 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-02-26 14:12:36,618 INFO    HandlerThread:44234 [interfaces.py:finish():202] Joined memory monitor
+2024-02-26 14:12:36,620 INFO    SenderThread:44234 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-26 14:12:36,622 INFO    HandlerThread:44234 [interfaces.py:finish():202] Joined network monitor
+2024-02-26 14:12:36,629 DEBUG   SenderThread:44234 [sender.py:send():382] send: stats
+2024-02-26 14:12:36,799 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: resume
+2024-02-26 14:12:36,799 INFO    HandlerThread:44234 [handler.py:handle_request_resume():699] starting system metrics thread
+2024-02-26 14:12:36,800 INFO    HandlerThread:44234 [system_monitor.py:start():194] Starting system monitor
+2024-02-26 14:12:36,801 INFO    SystemMonitor:44234 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-02-26 14:12:36,804 INFO    SystemMonitor:44234 [interfaces.py:start():190] Started cpu monitoring
+2024-02-26 14:12:36,806 INFO    SystemMonitor:44234 [interfaces.py:start():190] Started disk monitoring
+2024-02-26 14:12:36,813 INFO    SystemMonitor:44234 [interfaces.py:start():190] Started memory monitoring
+2024-02-26 14:12:36,816 INFO    SystemMonitor:44234 [interfaces.py:start():190] Started network monitoring
+2024-02-26 14:12:37,459 INFO    Thread-12 :44234 [dir_watcher.py:_on_file_created():271] file/dir created: /mnt/c/Users/debor/Desktop/My_First_LLM_app/RAG/Build-Your-Own-RAG-System/AI-Engineering/Week 2/Day 1/wandb/run-20240226_141200-7k0idmj4/files/wandb-summary.json
+2024-02-26 14:12:39,304 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: partial_history
+2024-02-26 14:12:39,313 DEBUG   SenderThread:44234 [sender.py:send():382] send: history
+2024-02-26 14:12:39,315 DEBUG   SenderThread:44234 [sender.py:send_request():409] send_request: summary_record
+2024-02-26 14:12:39,316 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: pause
+2024-02-26 14:12:39,318 INFO    HandlerThread:44234 [handler.py:handle_request_pause():708] stopping system metrics thread
+2024-02-26 14:12:39,320 INFO    HandlerThread:44234 [system_monitor.py:finish():203] Stopping system monitor
+2024-02-26 14:12:39,322 DEBUG   SystemMonitor:44234 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-02-26 14:12:39,324 INFO    HandlerThread:44234 [interfaces.py:finish():202] Joined cpu monitor
+2024-02-26 14:12:39,326 DEBUG   SystemMonitor:44234 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-02-26 14:12:39,328 INFO    HandlerThread:44234 [interfaces.py:finish():202] Joined disk monitor
+2024-02-26 14:12:39,330 DEBUG   SystemMonitor:44234 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-02-26 14:12:39,332 INFO    HandlerThread:44234 [interfaces.py:finish():202] Joined memory monitor
+2024-02-26 14:12:39,337 INFO    SenderThread:44234 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-26 14:12:39,338 INFO    HandlerThread:44234 [interfaces.py:finish():202] Joined network monitor
+2024-02-26 14:12:39,348 DEBUG   SenderThread:44234 [sender.py:send():382] send: stats
+2024-02-26 14:12:39,516 INFO    Thread-12 :44234 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/c/Users/debor/Desktop/My_First_LLM_app/RAG/Build-Your-Own-RAG-System/AI-Engineering/Week 2/Day 1/wandb/run-20240226_141200-7k0idmj4/files/wandb-summary.json
+2024-02-26 14:12:39,563 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: resume
+2024-02-26 14:12:39,564 INFO    HandlerThread:44234 [handler.py:handle_request_resume():699] starting system metrics thread
+2024-02-26 14:12:39,565 INFO    HandlerThread:44234 [system_monitor.py:start():194] Starting system monitor
+2024-02-26 14:12:39,566 INFO    SystemMonitor:44234 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-02-26 14:12:39,567 DEBUG   SenderThread:44234 [sender.py:send():382] send: telemetry
+2024-02-26 14:12:39,568 INFO    SystemMonitor:44234 [interfaces.py:start():190] Started cpu monitoring
+2024-02-26 14:12:39,572 INFO    SystemMonitor:44234 [interfaces.py:start():190] Started disk monitoring
+2024-02-26 14:12:39,576 INFO    SystemMonitor:44234 [interfaces.py:start():190] Started memory monitoring
+2024-02-26 14:12:39,578 INFO    SystemMonitor:44234 [interfaces.py:start():190] Started network monitoring
+2024-02-26 14:12:40,104 DEBUG   SenderThread:44234 [sender.py:send():382] send: exit
+2024-02-26 14:12:40,105 INFO    SenderThread:44234 [sender.py:send_exit():589] handling exit code: 0
+2024-02-26 14:12:40,106 INFO    SenderThread:44234 [sender.py:send_exit():591] handling runtime: 37
+2024-02-26 14:12:40,113 INFO    SenderThread:44234 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-26 14:12:40,116 INFO    SenderThread:44234 [sender.py:send_exit():597] send defer
+2024-02-26 14:12:40,117 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: defer
+2024-02-26 14:12:40,118 INFO    HandlerThread:44234 [handler.py:handle_request_defer():172] handle defer: 0
+2024-02-26 14:12:40,119 DEBUG   SenderThread:44234 [sender.py:send_request():409] send_request: defer
+2024-02-26 14:12:40,119 INFO    SenderThread:44234 [sender.py:send_request_defer():613] handle sender defer: 0
+2024-02-26 14:12:40,120 INFO    SenderThread:44234 [sender.py:transition_state():617] send defer: 1
+2024-02-26 14:12:40,121 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: defer
+2024-02-26 14:12:40,122 INFO    HandlerThread:44234 [handler.py:handle_request_defer():172] handle defer: 1
+2024-02-26 14:12:40,123 DEBUG   SenderThread:44234 [sender.py:send_request():409] send_request: defer
+2024-02-26 14:12:40,124 INFO    SenderThread:44234 [sender.py:send_request_defer():613] handle sender defer: 1
+2024-02-26 14:12:40,124 INFO    SenderThread:44234 [sender.py:transition_state():617] send defer: 2
+2024-02-26 14:12:40,125 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: defer
+2024-02-26 14:12:40,126 INFO    HandlerThread:44234 [handler.py:handle_request_defer():172] handle defer: 2
+2024-02-26 14:12:40,126 INFO    HandlerThread:44234 [system_monitor.py:finish():203] Stopping system monitor
+2024-02-26 14:12:40,128 DEBUG   SystemMonitor:44234 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-02-26 14:12:40,128 INFO    HandlerThread:44234 [interfaces.py:finish():202] Joined cpu monitor
+2024-02-26 14:12:40,128 DEBUG   SystemMonitor:44234 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-02-26 14:12:40,129 INFO    HandlerThread:44234 [interfaces.py:finish():202] Joined disk monitor
+2024-02-26 14:12:40,130 DEBUG   SystemMonitor:44234 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-02-26 14:12:40,131 INFO    HandlerThread:44234 [interfaces.py:finish():202] Joined memory monitor
+2024-02-26 14:12:40,133 INFO    HandlerThread:44234 [interfaces.py:finish():202] Joined network monitor
+2024-02-26 14:12:40,134 DEBUG   SenderThread:44234 [sender.py:send_request():409] send_request: defer
+2024-02-26 14:12:40,135 INFO    SenderThread:44234 [sender.py:send_request_defer():613] handle sender defer: 2
+2024-02-26 14:12:40,135 INFO    SenderThread:44234 [sender.py:transition_state():617] send defer: 3
+2024-02-26 14:12:40,136 DEBUG   SenderThread:44234 [sender.py:send():382] send: stats
+2024-02-26 14:12:40,136 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: defer
+2024-02-26 14:12:40,137 INFO    HandlerThread:44234 [handler.py:handle_request_defer():172] handle defer: 3
+2024-02-26 14:12:40,138 DEBUG   SenderThread:44234 [sender.py:send_request():409] send_request: defer
+2024-02-26 14:12:40,139 INFO    SenderThread:44234 [sender.py:send_request_defer():613] handle sender defer: 3
+2024-02-26 14:12:40,140 INFO    SenderThread:44234 [sender.py:transition_state():617] send defer: 4
+2024-02-26 14:12:40,141 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: defer
+2024-02-26 14:12:40,141 INFO    HandlerThread:44234 [handler.py:handle_request_defer():172] handle defer: 4
+2024-02-26 14:12:40,142 DEBUG   SenderThread:44234 [sender.py:send_request():409] send_request: defer
+2024-02-26 14:12:40,143 INFO    SenderThread:44234 [sender.py:send_request_defer():613] handle sender defer: 4
+2024-02-26 14:12:40,143 INFO    SenderThread:44234 [sender.py:transition_state():617] send defer: 5
+2024-02-26 14:12:40,144 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: defer
+2024-02-26 14:12:40,144 INFO    HandlerThread:44234 [handler.py:handle_request_defer():172] handle defer: 5
+2024-02-26 14:12:40,146 DEBUG   SenderThread:44234 [sender.py:send():382] send: summary
+2024-02-26 14:12:40,151 INFO    SenderThread:44234 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-02-26 14:12:40,154 DEBUG   SenderThread:44234 [sender.py:send_request():409] send_request: defer
+2024-02-26 14:12:40,156 INFO    SenderThread:44234 [sender.py:send_request_defer():613] handle sender defer: 5
+2024-02-26 14:12:40,156 INFO    SenderThread:44234 [sender.py:transition_state():617] send defer: 6
+2024-02-26 14:12:40,157 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: defer
+2024-02-26 14:12:40,158 INFO    HandlerThread:44234 [handler.py:handle_request_defer():172] handle defer: 6
+2024-02-26 14:12:40,159 DEBUG   SenderThread:44234 [sender.py:send_request():409] send_request: defer
+2024-02-26 14:12:40,159 INFO    SenderThread:44234 [sender.py:send_request_defer():613] handle sender defer: 6
+2024-02-26 14:12:40,164 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: status_report
+2024-02-26 14:12:40,439 INFO    SenderThread:44234 [sender.py:transition_state():617] send defer: 7
+2024-02-26 14:12:40,441 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: defer
+2024-02-26 14:12:40,442 INFO    HandlerThread:44234 [handler.py:handle_request_defer():172] handle defer: 7
+2024-02-26 14:12:40,444 DEBUG   SenderThread:44234 [sender.py:send_request():409] send_request: defer
+2024-02-26 14:12:40,445 INFO    SenderThread:44234 [sender.py:send_request_defer():613] handle sender defer: 7
+2024-02-26 14:12:40,446 INFO    SenderThread:44234 [sender.py:transition_state():617] send defer: 8
+2024-02-26 14:12:40,448 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: defer
+2024-02-26 14:12:40,449 INFO    HandlerThread:44234 [handler.py:handle_request_defer():172] handle defer: 8
+2024-02-26 14:12:40,450 DEBUG   SenderThread:44234 [sender.py:send_request():409] send_request: defer
+2024-02-26 14:12:40,451 INFO    SenderThread:44234 [sender.py:send_request_defer():613] handle sender defer: 8
+2024-02-26 14:12:40,453 INFO    SenderThread:44234 [job_builder.py:build():296] Attempting to build job artifact
+2024-02-26 14:12:40,474 INFO    SenderThread:44234 [job_builder.py:_get_source_type():426] is repo sourced job
+2024-02-26 14:12:40,475 INFO    SenderThread:44234 [job_builder.py:_get_program_relpath():444] run is notebook based run
+2024-02-26 14:12:40,553 INFO    Thread-12 :44234 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/c/Users/debor/Desktop/My_First_LLM_app/RAG/Build-Your-Own-RAG-System/AI-Engineering/Week 2/Day 1/wandb/run-20240226_141200-7k0idmj4/files/wandb-summary.json
+2024-02-26 14:12:40,555 INFO    SenderThread:44234 [job_builder.py:build():402] adding wandb-job metadata file
+2024-02-26 14:12:40,560 INFO    Thread-12 :44234 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/c/Users/debor/Desktop/My_First_LLM_app/RAG/Build-Your-Own-RAG-System/AI-Engineering/Week 2/Day 1/wandb/run-20240226_141200-7k0idmj4/files/config.yaml
+2024-02-26 14:12:40,614 INFO    SenderThread:44234 [sender.py:transition_state():617] send defer: 9
+2024-02-26 14:12:40,616 DEBUG   SenderThread:44234 [sender.py:send():382] send: artifact
+2024-02-26 14:12:40,616 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: defer
+2024-02-26 14:12:40,624 INFO    HandlerThread:44234 [handler.py:handle_request_defer():172] handle defer: 9
+2024-02-26 14:12:41,108 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-26 14:12:46,110 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: keepalive
+2024-02-26 14:12:47,046 INFO    wandb-upload_1:44234 [upload_job.py:push():89] Uploaded file /home/deboramachadoandrade/.local/share/wandb/artifacts/staging/tmp2fxyyjxd
+2024-02-26 14:12:47,056 INFO    wandb-upload_0:44234 [upload_job.py:push():89] Uploaded file /home/deboramachadoandrade/.local/share/wandb/artifacts/staging/tmpoohh4hu9
+2024-02-26 14:12:48,100 INFO    SenderThread:44234 [sender.py:send_artifact():1494] sent artifact job-https___github.com_AI-Maker-Space_AI-Engineering_RAQA_Assignment.ipynb - {'id': 'QXJ0aWZhY3Q6NzMyMjAyMTQ0', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE0MzE2MTg2MA==', 'latestArtifact': None}}
+2024-02-26 14:12:48,102 DEBUG   SenderThread:44234 [sender.py:send_request():409] send_request: defer
+2024-02-26 14:12:48,103 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: status_report
+2024-02-26 14:12:48,103 INFO    SenderThread:44234 [sender.py:send_request_defer():613] handle sender defer: 9
+2024-02-26 14:12:48,107 INFO    SenderThread:44234 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-02-26 14:12:48,614 INFO    SenderThread:44234 [dir_watcher.py:finish():388] scan: /mnt/c/Users/debor/Desktop/My_First_LLM_app/RAG/Build-Your-Own-RAG-System/AI-Engineering/Week 2/Day 1/wandb/run-20240226_141200-7k0idmj4/files
+2024-02-26 14:12:48,625 INFO    SenderThread:44234 [dir_watcher.py:finish():402] scan save: /mnt/c/Users/debor/Desktop/My_First_LLM_app/RAG/Build-Your-Own-RAG-System/AI-Engineering/Week 2/Day 1/wandb/run-20240226_141200-7k0idmj4/files/conda-environment.yaml conda-environment.yaml
+2024-02-26 14:12:48,649 INFO    SenderThread:44234 [dir_watcher.py:finish():402] scan save: /mnt/c/Users/debor/Desktop/My_First_LLM_app/RAG/Build-Your-Own-RAG-System/AI-Engineering/Week 2/Day 1/wandb/run-20240226_141200-7k0idmj4/files/config.yaml config.yaml
+2024-02-26 14:12:48,674 INFO    SenderThread:44234 [dir_watcher.py:finish():402] scan save: /mnt/c/Users/debor/Desktop/My_First_LLM_app/RAG/Build-Your-Own-RAG-System/AI-Engineering/Week 2/Day 1/wandb/run-20240226_141200-7k0idmj4/files/requirements.txt requirements.txt
+2024-02-26 14:12:48,700 INFO    SenderThread:44234 [dir_watcher.py:finish():402] scan save: /mnt/c/Users/debor/Desktop/My_First_LLM_app/RAG/Build-Your-Own-RAG-System/AI-Engineering/Week 2/Day 1/wandb/run-20240226_141200-7k0idmj4/files/wandb-metadata.json wandb-metadata.json
+2024-02-26 14:12:48,702 INFO    SenderThread:44234 [dir_watcher.py:finish():402] scan save: /mnt/c/Users/debor/Desktop/My_First_LLM_app/RAG/Build-Your-Own-RAG-System/AI-Engineering/Week 2/Day 1/wandb/run-20240226_141200-7k0idmj4/files/wandb-summary.json wandb-summary.json
+2024-02-26 14:12:48,728 INFO    SenderThread:44234 [sender.py:transition_state():617] send defer: 10
+2024-02-26 14:12:48,730 DEBUG   SenderThread:44234 [sender.py:send_request():409] send_request: poll_exit
+2024-02-26 14:12:48,731 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: defer
+2024-02-26 14:12:48,735 INFO    HandlerThread:44234 [handler.py:handle_request_defer():172] handle defer: 10
+2024-02-26 14:12:48,743 DEBUG   SenderThread:44234 [sender.py:send_request():409] send_request: defer
+2024-02-26 14:12:48,745 INFO    SenderThread:44234 [sender.py:send_request_defer():613] handle sender defer: 10
+2024-02-26 14:12:48,747 INFO    SenderThread:44234 [file_pusher.py:finish():172] shutting down file pusher
+2024-02-26 14:12:49,045 INFO    wandb-upload_1:44234 [upload_job.py:push():131] Uploaded file /mnt/c/Users/debor/Desktop/My_First_LLM_app/RAG/Build-Your-Own-RAG-System/AI-Engineering/Week 2/Day 1/wandb/run-20240226_141200-7k0idmj4/files/conda-environment.yaml
+2024-02-26 14:12:49,112 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-26 14:12:49,114 DEBUG   SenderThread:44234 [sender.py:send_request():409] send_request: poll_exit
+2024-02-26 14:12:49,452 INFO    wandb-upload_2:44234 [upload_job.py:push():131] Uploaded file /mnt/c/Users/debor/Desktop/My_First_LLM_app/RAG/Build-Your-Own-RAG-System/AI-Engineering/Week 2/Day 1/wandb/run-20240226_141200-7k0idmj4/files/requirements.txt
+2024-02-26 14:12:49,686 INFO    wandb-upload_0:44234 [upload_job.py:push():131] Uploaded file /mnt/c/Users/debor/Desktop/My_First_LLM_app/RAG/Build-Your-Own-RAG-System/AI-Engineering/Week 2/Day 1/wandb/run-20240226_141200-7k0idmj4/files/config.yaml
+2024-02-26 14:12:49,706 INFO    wandb-upload_3:44234 [upload_job.py:push():131] Uploaded file /mnt/c/Users/debor/Desktop/My_First_LLM_app/RAG/Build-Your-Own-RAG-System/AI-Engineering/Week 2/Day 1/wandb/run-20240226_141200-7k0idmj4/files/wandb-summary.json
+2024-02-26 14:12:49,909 INFO    Thread-11 (_thread_body):44234 [sender.py:transition_state():617] send defer: 11
+2024-02-26 14:12:49,911 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: defer
+2024-02-26 14:12:49,912 INFO    HandlerThread:44234 [handler.py:handle_request_defer():172] handle defer: 11
+2024-02-26 14:12:49,915 DEBUG   SenderThread:44234 [sender.py:send_request():409] send_request: defer
+2024-02-26 14:12:49,916 INFO    SenderThread:44234 [sender.py:send_request_defer():613] handle sender defer: 11
+2024-02-26 14:12:49,918 INFO    SenderThread:44234 [file_pusher.py:join():178] waiting for file pusher
+2024-02-26 14:12:49,920 INFO    SenderThread:44234 [sender.py:transition_state():617] send defer: 12
+2024-02-26 14:12:49,921 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: defer
+2024-02-26 14:12:49,922 INFO    HandlerThread:44234 [handler.py:handle_request_defer():172] handle defer: 12
+2024-02-26 14:12:49,924 DEBUG   SenderThread:44234 [sender.py:send_request():409] send_request: defer
+2024-02-26 14:12:49,925 INFO    SenderThread:44234 [sender.py:send_request_defer():613] handle sender defer: 12
+2024-02-26 14:12:49,926 INFO    SenderThread:44234 [file_stream.py:finish():595] file stream finish called
+2024-02-26 14:12:50,127 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-26 14:12:50,141 INFO    SenderThread:44234 [file_stream.py:finish():599] file stream finish is done
+2024-02-26 14:12:50,142 INFO    SenderThread:44234 [sender.py:transition_state():617] send defer: 13
+2024-02-26 14:12:50,144 DEBUG   SenderThread:44234 [sender.py:send_request():409] send_request: poll_exit
+2024-02-26 14:12:50,144 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: defer
+2024-02-26 14:12:50,148 INFO    HandlerThread:44234 [handler.py:handle_request_defer():172] handle defer: 13
+2024-02-26 14:12:50,152 DEBUG   SenderThread:44234 [sender.py:send_request():409] send_request: defer
+2024-02-26 14:12:50,154 INFO    SenderThread:44234 [sender.py:send_request_defer():613] handle sender defer: 13
+2024-02-26 14:12:50,156 INFO    SenderThread:44234 [sender.py:transition_state():617] send defer: 14
+2024-02-26 14:12:50,159 DEBUG   SenderThread:44234 [sender.py:send():382] send: final
+2024-02-26 14:12:50,159 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: defer
+2024-02-26 14:12:50,161 DEBUG   SenderThread:44234 [sender.py:send():382] send: footer
+2024-02-26 14:12:50,163 INFO    HandlerThread:44234 [handler.py:handle_request_defer():172] handle defer: 14
+2024-02-26 14:12:50,168 DEBUG   SenderThread:44234 [sender.py:send_request():409] send_request: defer
+2024-02-26 14:12:50,170 INFO    SenderThread:44234 [sender.py:send_request_defer():613] handle sender defer: 14
+2024-02-26 14:12:50,173 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: poll_exit
+2024-02-26 14:12:50,175 DEBUG   SenderThread:44234 [sender.py:send_request():409] send_request: poll_exit
+2024-02-26 14:12:50,184 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: internal_messages
+2024-02-26 14:12:50,188 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: server_info
+2024-02-26 14:12:50,190 DEBUG   SenderThread:44234 [sender.py:send_request():409] send_request: server_info
+2024-02-26 14:12:50,238 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: get_summary
+2024-02-26 14:12:50,240 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: sampled_history
+2024-02-26 14:12:50,242 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: job_info
+2024-02-26 14:12:50,346 DEBUG   SenderThread:44234 [sender.py:send_request():409] send_request: job_info
+2024-02-26 14:12:50,352 DEBUG   HandlerThread:44234 [handler.py:handle_request():146] handle_request: shutdown
+2024-02-26 14:12:50,353 INFO    HandlerThread:44234 [handler.py:finish():869] shutting down handler
+2024-02-26 14:12:51,244 INFO    WriterThread:44234 [datastore.py:close():296] close: /mnt/c/Users/debor/Desktop/My_First_LLM_app/RAG/Build-Your-Own-RAG-System/AI-Engineering/Week 2/Day 1/wandb/run-20240226_141200-7k0idmj4/run-7k0idmj4.wandb
+2024-02-26 14:12:51,350 INFO    SenderThread:44234 [sender.py:finish():1572] shutting down sender
+2024-02-26 14:12:51,351 INFO    SenderThread:44234 [file_pusher.py:finish():172] shutting down file pusher
+2024-02-26 14:12:51,352 INFO    SenderThread:44234 [file_pusher.py:join():178] waiting for file pusher

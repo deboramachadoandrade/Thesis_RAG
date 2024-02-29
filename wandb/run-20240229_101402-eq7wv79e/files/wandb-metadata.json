@@ -1,0 +1,79 @@
+{
+    "os": "Linux-5.15.133.1-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+    "python": "3.11.7",
+    "heartbeatAt": "2024-02-29T10:14:03.359772",
+    "startedAt": "2024-02-29T10:14:02.466252",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "RAQA Assignment.ipynb",
+    "codePathLocal": "RAQA Assignment.ipynb",
+    "git": {
+        "remote": "https://github.com/AI-Maker-Space/AI-Engineering",
+        "commit": "202e90630e31c504db3bc414e19d50fe7f42fe0f"
+    },
+    "email": "deboramachadoandrade@gmail.com",
+    "root": "/mnt/c/Users/debor/Desktop/My_First_LLM_app/RAG/Build-Your-Own-RAG-System/AI-Engineering",
+    "host": "LAPTOP-9SHDG8K4",
+    "username": "deboramachadoandrade",
+    "executable": "/home/deboramachadoandrade/anaconda3/envs/llmops-course/bin/python",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 2112.006,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2112.006,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2112.006,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2112.006,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2112.006,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2112.006,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2112.006,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2112.006,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2112.006,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 250.92389297485352,
+            "used": 13.431755065917969
+        }
+    },
+    "memory": {
+        "total": 3.734355926513672
+    }
+}

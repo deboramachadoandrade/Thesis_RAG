@@ -1,0 +1,2379 @@
+On the mechanisms governing plasma
+membrane organization - a STED-FCS
+investigation
+Dissertation
+for the award of the degree
+“Doctor rerum naturalium”
+Division of Mathematics and Natural Sciences
+of the Georg-August-Universit¨at G¨ottingen
+submitted by
+D´ebora Machado Andrade
+from Aracaju, Brazil
+G¨ottingen 2013
+Prof. Dr. Stefan W. Hell (Reviewer)
+Department of Nanobiophotonics
+Max Planck Institute for Biophysical Chemistry
+Prof. Dr. J¨org Enderlein (Reviewer)
+Georg-August-Universit¨at G¨ottingen
+Prof. Dr. Erwin Neher
+Membrane Biophysics Department
+Max Planck Institute for Biophysical Chemistry
+Date of the oral examination: 06.01.2014
+ii
+Declaration
+I hereby ensure that the presented thesis “On the mechanisms governing
+plasma membrane organization - a STED-FCS investigation” has been writ-
+ten independently and with no other sources and aids than quoted.
+G¨ottingen, November 27th 2013
+iv
+Abstract
+The plasma membrane is the barrier which localizes and separates life’s
+processes from their external environment. Long described as a free stand-
+ing two-dimensional ﬂuid mosaic, the organization of the plasma membrane
+remains elusive.
+Currently, the most prominent models proposed for its
+organization lack a consistent body of evidence for their support. Here,
+we present the ﬁrst validation of one of these hypotheses: the picket fence
+model. Using the STED-FCS technique, we demonstrate that cortical actin
+networks compartmentalize the diﬀusion of lipids in the plasma membrane
+of cells. Interestingly, our results further indicate that the Arp2/3 complex
+is a major regulator of the cortical actin networks, since inhibiting Arp2/3
+leads to speciﬁc suppression of compartmentalized diﬀusion of lipids. Fur-
+thermore, the extrusion of the actin cortex promoted by the introduction
+of myelin-basic protein networks into cells causes lipid diﬀusion to be mod-
+ulated by these networks instead. Conclusively, we have elucidated one of
+the pivotal mechanisms governing the “ﬂuidity” of the plasma membrane
+mosaic.
+Zusammenfassung
+Die Plasmamembran ist die Barriere, welche die fundamentalen Prozesse
+des Lebens lokalisiert und von ihrer externen Umgebung begrenzt. Obwohl
+die Plasmamembran lange Zeit als unabh¨angiges, zweidimensionales und
+ﬂ¨ussiges Mosaik beschrieben worden ist, bleibt ihre tats¨achliche Organi-
+sation unbekannt.
+Den derzeit g¨angigen Modellen zur Beschreibung der
+Plasmamembranorganisation fehlt eine ausreichend experimentelle Basis.
+In dieser Arbeit pr¨asentieren wir zum ersten Mal eine tats¨achliche Veriﬁka-
+tion eines dieser Modelle, n¨amliche des “picket fence models”. Mit Hilfe
+der STED-FCS-Technik demonstrieren wir, dass kortische Aktinnetzwerke
+die Diﬀusion von Lipiden in der Plasmamembran von Zellen kompartmen-
+talisieren. Unsere Versuche deuten darauf hin, dass der Arp2/3-Komplex
+ein Hauptregulator des kortischen Aktinnetzwerks ist, da eine Inhibition
+von Arp2/3 zu einer speziﬁschen Unterdr¨uckung der kompartmentalisierten
+Lipiddiﬀusion f¨uhrt. Zus¨atzlich bewirkt eine Auﬂ¨osung des kortischen Ak-
+tinnetzwerks mittels der Einf¨uhrung eines Myelin-Basischen Proteinnetz-
+werks in die Zelle, dass die Diﬀusion stattdessen durch dieses neue Netzwerk
+moduliert wird. Zusammenfassend haben wir einen der zentralen Mecha-
+nismen hinter der “Fluidit¨at” des Plasmamembran-Mosaiks untersucht und
+aufgekl¨art.
+vi
+Para meus pais, Ivana e Augusto
+E para meus av´os, Maria, C´elia, Antˆonio e Augusto
+“E a coisa mais certa de todas as coisas
+N˜ao vale um caminho sob o sol
+E o sol sobre a estrada, ´e o sol sobre a estrada, ´e o sol”
+C. Veloso
+Contents
+Glossary
+xi
+1
+Introduction
+1
+1.1
+Unravelling the plasma membrane of cells . . . . . . . . . . . . . . . . .
+1
+1.1.1
+A brief history of plasma membrane structure . . . . . . . . . . .
+1
+1.1.2
+Plasma membrane dynamics and heterogeneity . . . . . . . . . .
+4
+1.2
+STED-FCS: a powerful tool in the investigation of membrane dynamics
+7
+1.3
+Aims of this dissertation . . . . . . . . . . . . . . . . . . . . . . . . . . .
+11
+2
+Materials and methods
+13
+2.1
+STED-FCS
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+13
+2.1.1
+STED-FCS setup . . . . . . . . . . . . . . . . . . . . . . . . . . .
+13
+2.1.2
+Calibration of the STED-FCS nanoscope
+. . . . . . . . . . . . .
+15
+2.1.3
+STED-FCS cellular measurements
+. . . . . . . . . . . . . . . . .
+16
+2.1.4
+STED-FCS analysis
+. . . . . . . . . . . . . . . . . . . . . . . . .
+18
+2.2
+Sample preparation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+21
+2.2.1
+Cell culture and transfection
+. . . . . . . . . . . . . . . . . . . .
+21
+2.2.2
+Labelling procedures . . . . . . . . . . . . . . . . . . . . . . . . .
+21
+2.2.3
+Drug treatments . . . . . . . . . . . . . . . . . . . . . . . . . . .
+22
+2.3
+Monte Carlo simulations for STED-FCS measurements . . . . . . . . . .
+23
+3
+Lipid compartmentalization at the plasma membrane
+25
+3.1
+Lipid compartmentalization hypothesis . . . . . . . . . . . . . . . . . . .
+25
+3.2
+Detecting lipid compartmentalized diﬀusion via STED-FCS . . . . . . .
+26
+3.3
+Investigation of molecular mechanisms underlying lipid compartmental-
+ization . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+30
+3.3.1
+Cytoskeleton modulation signiﬁcantly impacts lipid compartmen-
+talized diﬀusion . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+31
+3.3.2
+Cholesterol depletion and myosin II inhibition do not aﬀect lipid
+compartmentalized diﬀusion . . . . . . . . . . . . . . . . . . . . .
+34
+ix
+CONTENTS
+3.4
+Discussion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+34
+4
+Transient trapping of plasma membrane molecules
+39
+4.1
+Lipid diﬀusion in myelin sheath . . . . . . . . . . . . . . . . . . . . . . .
+40
+4.1.1
+Myelin membrane sheets: a unique biological membrane . . . . .
+40
+4.1.2
+Myelin basic protein modulates lipid diﬀusion in myelin mem-
+brane sheets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+42
+4.1.3
+Discussion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+43
+4.2
+Nanodomain assembly of Ras proteins . . . . . . . . . . . . . . . . . . .
+45
+4.3
+What is trapping? - Nanodomains and the diﬀusion law . . . . . . . . .
+47
+5
+Conclusions and outlook
+51
+5.1
+Plasma membrane dynamics: perspectives for future research . . . . . .
+53
+References
+55
+Appendix A
+63
+x
+Glossary
+Dapp
+apparent diﬀusion coeﬃcient
+FCS
+Fluorescence Correlation Spectroscopy
+FRAP
+Fluorescence Recovery After Photobleaching
+FWHM
+full width at half maximum
+GalCer
+galactosylceramide
+MBP
+myelin basic protein
+SLBs
+supported lipid bilayers
+SM
+sphingomyelin
+SPT
+Single-Particle Tracking
+STED
+Stimulated Emission Depletion
+STED-FCS
+Stimulated Emission Depletion Fluorescence Correlation Spectroscopy
+xi
+GLOSSARY
+xii
+1
+Introduction
+1.1
+Unravelling the plasma membrane of cells
+The plasma membrane of cells plays a main role in pivotal processes related to cell
+function and maintenance of life itself, such as selective permeability, chemotaxis and
+plasma membrane protein traﬃcking. Furthermore, plasma membrane dynamics are at
+the core of cellular signal transduction pathways. The complexity and speciﬁcity with
+which this structure enables this fundamental process has attracted increasing attention
+to the investigation of its dynamical organization in the last decades. Despite about
+ninety years of intense research, many of the mechanisms underlying plasma membrane
+organization and function still remain elusive. Many proposed models which initially
+enjoyed great acceptance and successfully explained experimental ﬁndings related to the
+plasma membrane have been eventually proved wrong or incomplete. Currently, the
+most accepted membrane-organizing principles are still highly debatable, indicating
+that the state of the art of this ﬁeld is possibly still scratching the surface of the
+organization of a highly complex system. Its investigation constitutes one of the most
+fascinating scientiﬁc challenges of modern cell biology.
+1.1.1
+A brief history of plasma membrane structure
+The plasma membrane of cells was ﬁrst reported to be formed by a double bilayer of
+lipids by E. Gorter and F. Grendel in 19251. They postulated that the amphiphilic
+nature of lipids requires a bilayer structure in order to be stabilized in membranes in
+an aqueous environment. In this construct, in order to keep the lipids’ hydrophobic
+tails away from the water that is both inside and outside of the cells, the lipids must
+be arranged so that the polar groups form the outside of such a bilayer, with the tails
+protected in the middle (Fig. 1.1 A). In order to test this hypothesis, they performed a
+very elegant experiment aiming to quantify the amount of lipids per area in the plasma
+1
+1. INTRODUCTION
+membrane. They extracted lipids from the plasma membrane of mammalian red blood
+cells with acetone, and compared the area occupied by a monolayer formed by the
+extracted lipids with the total area of red blood cells used in the experiment. The
+measured ratio between the correspondent lipid monolayer and the total cell surface
+area was precisely 2:1. Although Gorter and Grendel’s estimation of amount of ex-
+tracted lipids and calculation of the surface area of eritrocytes was later reported to be
+inaccurate to some extent2, this experiment set the foundations for intense subsequent
+research in this ﬁeld, and furthermore became a remarkable example of the power of
+biochemical ﬁrst principles applied to biology.
+Further development in the theory of plasma membrane structure came in 1935,
+when J.F. Danielli and H. Davson incorporated new ﬁndings on membrane tension and
+plasma membrane protein content, as well as the concept of membrane permeability
+and pore theory, into the lipid bilayer model proposed by Gorter and Grendel. As a
+result, a new concept of the plasma membrane structure emerged3: Danielli and Davson
+proposed that the plasma membrane comprised a lipid bilayer onto which a monolayer
+of globular proteins was adsorbed onto both sides (Fig.1.1 B). In the membrane model
+proposed by Danielli and Davson, membrane proteins were assumed to be globular due
+to the then recent discovery of the pepsin globular structure by J.D. Bernal and D.
+Crowfoot4.a
+The advent of electron microscopy set a milestone in membrane research: for the
+ﬁrst time, biological membranes could be imaged directly. In the late 1950’s, a new
+paradigm for the organization of biological membranes was set by J.D. Robertson, a pi-
+oneering electron microscopist5. Besides allowing the visualization of the plasma mem-
+brane itself, Robertson’s micrographs showed that many other structures inside the cell
+were also enclosed by membranes. His images showed the structures of all membranes
+in the cell to be inherently similar, and this unique nature of biological membranes led
+him to put forward his concept of the “unit membrane”. In fact, his model implied
+more than the ubiquity of biological membranes. With a very bold and non-orthodox
+model, Robertson hypothesized that the membrane was continuous within a cell, with
+the plasma membrane being connected to all other internal membranes.b
+Despite its initial popularity, the unit membrane model proposed by Robertson5 was
+soon discarded. New developments in ﬁxation techniques for electron microscopy during
+the 1960’s rendered images which discouraged the hypothesis of a continuum between
+the plasma membrane and the membranes enclosing organelles.
+Further knowledge
+aThose were the very early days of protein structure determination, and in fact pepsin was one of
+the ﬁrst proteins to be crystallized. The vast and prominent subsequent work on X-ray crystallography
+by Crowfoot brought a wealth of knowledge of protein and lipid structures, which eventually rendered
+her the Nobel Prize in Chemistry in 1964.
+bOtherwise, Robertson’s unit membrane model kept the main features of Danielli and Davson’s
+model, i.e., the plasma membrane was assumed to be formed by a monolayer of proteins adsorbed onto
+both sides of a lipid bilayer.
+2
+1.1 Unravelling the plasma membrane of cells
+Figure 1.1: Three models for the architecture of the plasma membrane - (A)
+The lipid bilayer structure originally proposed by Gorter and Grendel. (B) The Danielli-
+Davson model, featuring a layer of globular proteins adsorbed onto both sides of the lipid
+bilayer. (C) The Singer-Nicolson model (ﬂuid mosaic model), featuring both peripheral
+and integral proteins embedded in the lipid bilayer.
+3
+1. INTRODUCTION
+about the plasma membrane and its constituents emerged from a wealth of studies based
+on electron microscopy and biochemical techniques, and was uniﬁed by S.J. Singer and
+G.L. Nicolson in 1972 in a new model for the plasma membrane architecture, called the
+“ﬂuid mosaic” model6. This model deﬁnes the plasma membrane as a mosaic whose
+matrix is the lipid bilayer, where proteins of diﬀerent kinds are embedded (Fig.1.1 C).
+In this model, lipids and proteins are not static, but are assumed to diﬀuse, hence the
+“ﬂuidity” of the ﬂuid mosaic model.
+Many aspects contribute to the substantial novelty introduced by the ﬂuid mosaic
+model in the ﬁeld of membrane research. By discarding the hypothesis of two protein
+layers sandwiching a lipid bilayer and postulating instead that proteins are embedded in
+the lipid bilayer, this model reconciled the protein content in biological membranes with
+its thickness as determined by electron microscopy (between 7.5 and 9.0 nm, according
+to the images then available).
+In addition, biological membranes were for the ﬁrst
+time considered to be a dynamic system, with all membrane constituents postulated to
+undergo Brownian diﬀusion. The diﬀusion of membrane proteins was ﬁrst shown in 1970
+by L.D. Frye and M. Edidin, who used immunoﬂuorescence to demonstrate that after
+fusion of a mouse and a human cell, their speciﬁc membrane proteins were gradually
+intermixed7. This experiment is one of the pillars in the foundation of the ﬂuid mosaic
+model. The ubiquitous dynamical character of all membrane constituents was suggested
+to be connected to fundamental processes of membrane function. Furthermore, for the
+ﬁrst time, this model accounted for the thermodynamic stability of membrane proteins
+and lipids, in which proteins were considered to be largely heterogeneous in molecular
+weight and form of attachment to the lipid bilayer6.
+1.1.2
+Plasma membrane dynamics and heterogeneity
+The discovery that plasma membrane molecules are not static, but in fact undergo
+perpetual diﬀusion, initiated a whole new ﬁeld of research. Importantly, the plasma
+membrane of cells is responsible for controlling the traﬃc of molecules into and out of
+the cell, as well as being the ultimate interface where cell signalling takes place. In
+fact, the ﬁrst work on signal transduction8 coincided in time with the ﬁrst work on
+membrane dynamics7, both dating from the early 70’s. The dynamics of membrane
+constituents, assumed to play a fundamental role in membrane function, emerged then
+as an important phenomenon whose understanding could bring a wealth of knowledge
+to numerous ﬁelds of cell biology.
+The ﬁrst theoretical framework for the diﬀusion of membrane constituents came in
+1975, when P.G. Saﬀman and M. Delbr¨uck considered the Brownian diﬀusion equa-
+tions proposed by A. Einstein9 under the boundary conditions imposed by the plasma
+membrane structure10 (as deﬁned by the ﬂuid mosaic model). Saﬀman and Delbr¨uck
+concluded that diﬀusion in a highly viscous two-dimensional medium (the lipid bilayer)
+4
+1.1 Unravelling the plasma membrane of cells
+surrounded by a low viscous medium (water) promotes diﬀusion that only weakly (loga-
+rithmically) depends on the radius of the molecule. A corollary from this theory is that
+proteins would be expected to diﬀuse with approximately the same diﬀusion coeﬃcient,
+regardless of their size, and further that oligomerization of proteins would not impact
+diﬀusion signiﬁcantly.
+Numerous biophysical techniques using ﬂuorescent probes or gold particles were
+conceived in the following years, pursuing the investigation of dynamics and interac-
+tions of cellular molecules. Fluorescence Correlation Spectroscopy (FCS)11, Fluores-
+cence Recovery After Photobleaching (FRAP)12, Single-Particle Tracking (SPT)13,14
+and optical tweezers15 are examples of these microscopy-based techniques that would
+later change the paradigms of the ﬂuid mosaic model. In particular, studies based on
+FRAP, SPT and optical tweezers in the 80s and 90s rendered inaccurate the notion
+that proteins undergo Brownian diﬀusion in the plasma membrane15–17, which was one
+of the main assumptions of the ﬂuid mosaic model6. Instead, diﬀusion of proteins was
+observed to be highly heterogeneous.
+Gradually, the heterogeneity of lipid distribution throughout the plasma membrane
+also became a more plausible hypothesis than the homogeneous lipid bilayer postu-
+lated by the ﬂuid mosaic model. The ﬁrst evidence for lipid segregation came from
+the discovery that diﬀerent types of lipids partition diﬀerently into the outer and in-
+ner leaﬂets of the double bilayer of the plasma membrane18. Furthermore, epithelial
+cells were found to be polarized, i.e.
+their apical membrane features diﬀerent lipid
+composition from the basal membrane19. In 1997, K. Simons and E. Ikonen put those
+ﬁndings in a broader context of lipid self-assembly, putting forward a new construct
+for plasma membrane organization, whose underlying principle is the self-association
+of speciﬁc lipids into stable platforms20. They coined the term “lipid rafts” to de-
+note these platforms, postulated to be regions of the plasma membrane highly enriched
+in sphingolipids, cholesterol and lipid-anchored proteins. In lipid rafts, lipids are orga-
+nized in liquid ordered phase (Lo), which is characterized by a high degree of acyl-chain
+ordering21. Conversely, membrane lipids out of rafts are organized in liquid disordered
+phase (Ld). According to the model introduced by Simons and Ikonen, lipid rafts are
+assumed to have speciﬁc protein selectivity, increasing the probability of interaction of
+non-abundant proteins and receptors, with lipid self-assembly being the driving force
+for heterogeneity of distribution of membrane molecules.
+Because the lipid rafts hypothesis could successfully describe a potential mecha-
+nism for the most important cell membrane functions by proposing an elegant model
+for membrane sorting, it has been enjoying vast acceptance by the scientiﬁc commu-
+nity since its formulation, becoming one of the most important paradigms of modern
+cell biology22. In fact, functions attributed to lipid rafts have spanned the manifold
+functions ascribed to the plasma membrane, with several connections between these
+5
+1. INTRODUCTION
+lipid platforms and diseases been postulated23,24. Nevertheless, the very existence of
+lipid rafts is still debatable23,25. The foundations for the lipid rafts hypothesis relied
+on experiments with detergent extraction of biological membranes, whose conclusions
+were drawn into question by several studies25. Although recent advances in biophysical
+techniques have later allowed a more compelling body of evidence21,22, more conclusive
+proofs, such as the direct visualization of lipid rafts, as well as the determination of
+their characteristic lifetime, are still missing.
+Figure 1.2:
+Combination of the two currently most prominent membrane-
+organizing principles: lipid rafts and pickets and fences - Lipids in the raft phase
+are in the liquid-ordered phase, whereas lipids out of the raft are in the liquid-disordered
+phase. Diﬀerent types of membrane proteins are postulated to have diﬀerent aﬃnities to
+lipid rafts. The sub-membranous cortical actin partially compartmentalize proteins and
+lipids, including rafts.
+In addition to the lipid rafts hypothesis, yet another major organizing principle has
+been put forward to explain the dynamics of membrane molecules: the picket fence
+model, proposed by A. Kusumi26. This model hypothesizes that the sub-membranous
+actin cortex hinders the diﬀusion of transmembrane proteins, which tend to anchor
+to the underlying actin ﬁlaments. These transmembrane proteins in turn constrain
+the diﬀusion of other proteins and lipids, eﬀectively compartmentalizing the plasma
+membrane. This model was proposed in view of SPT studies on membrane receptors16
+and lipids27, which revealed compartmentalized diﬀusion on the surface of the plasma
+membrane. Kusumi coined the term “hop diﬀusion” to denote this diﬀusion pattern.
+Compartmentalization of membrane constituents was postulated to be implicated, for
+6
+1.2 STED-FCS: a powerful tool in the investigation of membrane dynamics
+example, in localized signalling28. However, this model too remains controversial29.
+While the notion of protein diﬀusion being constrained by the actin cytoskeleton seems
+to be indisputable30, all supporting evidence for that lipids undergo compartmentalized
+diﬀusion was so far provided exclusively by SPT experiments, in which artefact-prone
+probes were used31.
+Currently, lipid rafts and pickets fence are the most prominent models proposed for
+the organization of the plasma membrane. These models are not mutually exclusive
+(Fig. 1.2), and in fact can be uniﬁed in a hierarchical scheme that confers diﬀerent orga-
+nizing principles to the diﬀerent spatial scales under consideration32. Furthermore, yet
+other mechanisms of molecular organization at the plasma membrane have been pro-
+posed. One such proposal suggested that nanoclusters of lipid-anchored proteins and
+signalling proteins are ﬁrst assembled via interaction with dynamic actin ﬁlaments dis-
+sociated from the actin cytoskeleton mesh and free to diﬀuse throughout the membrane
+cortex33. This sorting mechanism would facilitate nanocluster assembling of membrane
+proteins by using the same strategy which is attributed to lipid rafts: preferential inter-
+actions of proteins to speciﬁc molecules increase their probability of interaction among
+themselves, thereby facilitating nanoclustering.
+In summary, research carried out in the last decades has revealed the plasma mem-
+brane to be a profoundly complex dynamical system.
+Continuous improvement of
+biophysical techniques have brought important insights into this ﬁeld, but more sophis-
+ticated methods are yet required to answer the yet unresolved questions. In particular,
+limitations in spatio-temporal resolution of the available methods and limitations in the
+available labelling strategies for probing membrane molecules still prevent the solution
+of the most pressing questions. In the following section, a powerful technique with
+great potential to shed light on important unsolved problems in membrane dynamics
+is introduced.
+1.2
+STED-FCS: a powerful tool in the investigation of
+membrane dynamics
+Due to the wave nature of light, conventional ﬂuorescence microscopy is limited in
+resolution by the diﬀraction of the converged beam that forms the focal spot. This
+diﬀraction limit was ﬁrst put forward by E.K. Abbe, who calculated the resolution
+limit of the microscope to be34:
+d =
+λ
+2NA
+(1.1)
+where d stands for the achievable resolution by a microscope, λ is the wavelength of
+light used for illumination of the sample and NA denotes the numerical aperture of the
+microscope.
+7
+1. INTRODUCTION
+Having become a standard law in optical physics, Abbe’s equation was reformulated
+in 1994, when S.W. Hell proposed a new physical concept in ﬂuorescence microscopy
+which eﬀectively renders this technique diﬀraction-unlimited: Stimulated Emission De-
+pletion (STED)35. In this construct, ﬂuorophores within the diﬀraction-limited focus
+become distinguishable by inducing them to transiently assume distinct ﬂuorescent
+states36,37. The excitation beam causes the molecules within the diﬀraction-limited
+spot to be sent to a ﬂuorescent state (S1). Subsequent STED illumination de-excites a
+fraction of the molecules, which return to the non-ﬂuorescent ground state (S0). Typi-
+cally, a doughnut-shaped beam is used for inducing this stimulated emission. Thus, the
+collected ﬂuorescence originates solely from within a central area much smaller than
+the diﬀraction limit. The photons emitted by stimulated emission can be separated by
+appropriate ﬁlters from ﬂuorescence, by de-exciting at a wavelength suﬃciently larger
+than the emission peak of the ﬂuorophore (Fig.1.3 A). The eﬀective resolution achiev-
+able by this technique depends in principle only on the intensity of the STED beam at
+the focal plane38:
+dSTED =
+dconf
+q
+1 + ISTED
+Is
+(1.2)
+where dSTED stands for the resolution achievable by a STED microscope, dconf is the
+diﬀraction-limited resolution of a confocal microscope, exciting at a given wavelength,
+ISTED is the STED beam intensity at the focal plane and Is is a saturation intensity,
+dependent on the ﬂuorophore and on the STED wavelength.
+STED microscopy, being the ﬁrst concept to break the diﬀraction limit39, has sig-
+niﬁcantly broadened the applicability of ﬂuorescence imaging to the life sciences in
+the last years40–43. However, the applications of STED are not limited to imaging.
+This ingenious concept will ﬁnd applications whenever overcoming the diﬀraction limit
+in ﬂuorescence techniques is necessary or useful. A beautiful example that illustrates
+this idea is the method of Stimulated Emission Depletion Fluorescence Correlation
+Spectroscopy (STED-FCS), which emerges as a powerful technique to assess dynamics
+of membrane molecules on the nanoscale44–46.
+By combining FCS and STED mi-
+croscopy, this technique is able to resolve membrane dynamics with unprecedented
+resolution44,47,48.
+STED-FCS shares the same theoretical principles of FCS. The ﬁrst realization of
+FCS occured in 1972, with the seminal work of D. Magde, E. Elson and W.W. Webb11.
+Nonetheless, its underlying probabilistic principles trace back to the development of
+stochastic theory in the beginning of the 20th century. The following excerpt from the
+review “Stochastic Problems in Physics and Astronomy” from 1943, by the prominent
+physicist S. Chandrasekhar, illustrates that49:
+“Suppose we observe by means of an ultramicroscope a small well-deﬁned element of
+8
+1.2 STED-FCS: a powerful tool in the investigation of membrane dynamics
+Figure 1.3: STED-FCS assesses lipid dynamics on the nanoscale - (A) Jablonski
+diagram illustrating the photophysics of stimulated emission depletion. Horizontal lines
+represent the energy levels of the ﬂuorophore. After excitation to a higher electronic state
+(e.g.
+S1), ﬂuorescence is a spontaneous transition that brings the ﬂuorophore back to
+the ground state (S0), usually to a low vibrational level. Stimulated emission is typically
+implemented with light of a longer wavelength, that induces transition to one of the higher
+vibrational states. In this way, experimental separation between ﬂuorescence and STED
+beams is achieved by appropriate spectral ﬁlters. (B) A doughnut-shaped STED beam
+(red) shuts down ﬂuorescence in the periphery of the confocal spot area (green), allowing
+diﬀraction-unlimited FCS. In the experiments described in this work, the diameter of the
+observation area, or full width at half maximum (FWHM), varied between 240 nm down
+to <40 nm. (C) Experimental correlation curves for confocal and STED recordings. The
+amplitude of the autocorrelation function, which is inversely proportional to the temporal
+average of the number of ﬂuorescent molecules in the focal spot, exempliﬁes the decrease
+in the eﬀective observation area for STED recordings.
+9
+1. INTRODUCTION
+volume of a colloidal solution and count the number of particles in the element at deﬁ-
+nite intervals of time τ, 2τ, 3τ, etc., and record them consecutively. We shall further
+suppose that the interval τ between successive observations is not large. Then the num-
+ber which is observed on any particular occasion will be correlated in a deﬁnite manner
+with what was observed on the immediately preceding occasion. This correlation will
+depend on a variety of physical factors including the viscosity of the medium: thus it
+is clear from general considerations that the more viscous the surrounding medium the
+greater will be the correlation in the numbers counted on successive occasions.”
+Surprisingly, Chandrasekhar’s visionary construct deﬁnes the basic principles of FCS
+with great accuracy. Or more precisely, it deﬁnes the principles of STED-FCS, which
+is a diﬀraction-unlimited technique, by employing an “ultramiscroscope” in its experi-
+mental realization, i.e. the STED microscope. In STED-FCS, photon counts stemming
+from ﬂuorophore-labelled molecules diﬀusing through the focal spot are correlated in
+time according to the formula50:
+G(τ) = ⟨δF(t)δF(t + τ)⟩
+⟨F(t)⟩2
+(1.3)
+where G(τ) is the autocorrelation function, F(t) stands for ﬂuorescence counts at a
+time t and δF stands for ﬂuctuations of the ﬂuorescence counts with respect to the
+average ⟨F(t)⟩. The autocorrelation function is a measure of the self-similarity of the
+distribution of molecules in the focal volume over the time. This function provides
+information about physical-chemical processes undergone by the ﬂuorescent molecules
+in the relevant time scales. For example, characteristic dark state transitions, bind-
+ing reactions and diﬀusion rates are typical processes assessed by the analysis of the
+autocorrelation function51.
+STED-FCS takes advantage of the improved lateral resolution provided by STED in
+order to investigate diﬀusion of molecules on the plasma membrane on the nanoscale.
+Since the lateral resolution of a STED microscope is correlated to the STED beam
+intensity at the focal plane (Eq. (1.2)), STED-FCS allows the assessment of diﬀusion
+in a tunable, diﬀraction-unlimited observation area (Fig.1.3 B,C). This represents an
+exceptional breakthrough for spot-variation FCS, a method that discerns diﬀusion pat-
+terns based on the relation among FCS recordings at diﬀerent sizes of the observation
+area52,53. In this context, STED-FCS permits the realization of spot-variation FCS in
+areas comparable in size to the putative lipid rafts and cytoskeleton-based submem-
+branous compartments, supposedly the two major structures responsible for membrane
+organization.
+10
+1.3 Aims of this dissertation
+1.3
+Aims of this dissertation
+This work aims to elucidate the validity of the picket fence model, which hypothesizes
+that cortical actin networks form compartments that partially segregate lipids and
+proteins in the plasma membrane. This model, currently one of the most important
+organizing principles for the plasma membrane, has been the subject of debate for many
+years due to the fact that limitations in spatio-temporal resolution of the available
+methods to probe membrane dynamics have precluded its validation.
+In order to achieve this goal, we used STED-FCS, a diﬀraction-unlimited technique
+which allows a systematic probing of molecular diﬀusion with high spatio-temporal
+resolution. With spatial resolution below 40 nm, STED-FCS is able to resolve lipid
+diﬀusion within the putative membrane compartments28,54.
+This dissertation is organized as follows. In chapter 2, the methods and materi-
+als utilized in this research are detailed. Chapter 3 presents the contentious aspects
+of the picket fence hypothesis, and shows how we, for the ﬁrst time, validate that
+model. Additionally, we determine the underlying cellular mechanisms that allow lipid
+compartmentalization in the plasma membrane. Chapter 4 introduces the investiga-
+tion of lipid diﬀusion in myelin membrane sheets and demonstrate that in this special
+membrane, the underlying meshwork of myelin basic protein modulates lipid diﬀusion.
+Furthermore, nanoclustering of Ras signalling proteins is observed. In chapter 5 the
+ﬁnal conclusions of this work are made, and an outlook for further developments is
+presented.
+11
+1. INTRODUCTION
+12
+2
+Materials and methods
+2.1
+STED-FCS
+STED-FCS was the method here utilized to investigate membrane dynamics.
+The
+STED-FCS setup and its calibration procedure, as well as details about cellular mea-
+surements are described in the following.
+2.1.1
+STED-FCS setup
+The STED nanoscope (Fig. 2.1) was based on a home-built confocal microscope setup
+equipped with a 640 nm laser (∼100 ps pulse width, LDH-D-C-640, PicoQuant) for
+excitation of the ﬂuorescent label with a repetition rate of 45 MHz. The STED beam
+was provided by a mode-locked Titanium:Sapphire laser system (Chameleon, Coherent
+Inc.) operating at 780 nm with a repetition rate of 90 MHz. The time interval between
+the pulses of both lasers was adjusted using a home-built electronic delay unit, where
+the STED pulses served as the trigger master. The STED laser pulses were stretched
+from 200 fs to a pulse length of approximately 180 ps using four 30 cm optical SF6
+glass rods and a 125m-long polarization maintaining single-mode ﬁber (OZ Optics).
+The laser beams were spatially overlaid and the ﬂuorescence light ﬁltered by ap-
+propriate (dichroic) ﬁlters (AHF Analysentechnik). The doughnut-shaped focal spot
+of the STED beam featuring a central intensity zero was produced by introducing a
+phase-modifying plate (RPC Photonics) into the beam path, imprinting on the wave
+front a helical phase ramp exp(iϕ) with 0 ≤ ϕ ≤ 2π. The STED beam, initially Gaus-
+sian shaped, acquires a toroidal conformation after being converged by the objective
+lens. That is due to the fact that the phase retardation imprinted by the phase plate
+on the wave front causes destructive interference along the optical axis upon conver-
+gence of the beam. A λ/4-plate (B. Halle) ensured circular polarization of the STED
+and excitation beams.
+Fluorescence excitation and collection was realized using an
+13
+2. MATERIALS AND METHODS
+Figure 2.1: Schematics of the STED-FCS setup - The STED nanoscope used in
+the experiments reported in this thesis comprises one diode laser used for excitation of
+the ﬂuorescent molecules and a Ti:Sa laser used for STED. Both excitation and STED
+beams, after being collimated, are combined by appropriate dichroic mirrors. The emitted
+ﬂuorescence is ﬁltered by a bandpass ﬁlter and split onto two avalanche photo diodes
+(APDs). The cross-correlation between the signals originated by the APDs is done by a
+correlator module. During the experiment, the STED beam power is varied by a software-
+controlled laser power control (LPC) (Brockton Electro-Optics). The combination of λ/2
+and λ/4 plates facilitates circular polarization for the excitation and STED beams.
+14
+2.1 STED-FCS
+oil immersion objective (APON 60x, NA = 1.49, Olympus). A confocal pinhole was
+provided by coupling the ﬂuorescence onto a multi-mode ﬁber (Fiber Optic Network
+Technology). Additionally, this ﬁber splits the signal 50:50, which was then detected by
+two single-photon counting modules (avalanche photo diode SPCM-AQR-13-FC, Perkin
+Elmer Optoelectronics) and the recorded ﬂuorescence counts were further processed by
+a hardware correlator card (Flex02-01D, Correlator.com). The intensity distribution
+of the excitation and STED light were measured by scanning a scattering gold bead
+of 80nm in diameter (gold colloid, EMGC80, BBinternational) using a non-confocal
+detector (MP 963 Photon Counting Module, Perkin Elmer).
+Figure 2.2: Experimental intensity distributions of excitation and STED beams
+- A colloidal gold particle was used to scatter both excitation and STED beams, allowing
+the visualization of their intensity distributions. This procedure facilitates the alignment
+of the STED setup, which consists of spatially overlaying both beams, co-centered, and
+ensuring the symmetry of their intensity distributions. Scale bars are 250 nm
+2.1.2
+Calibration of the STED-FCS nanoscope
+The laser powers P were measured at the back focal plane of the objective. Together
+with the full width at half maximum (FWHM) of the focal laser intensity distribution,
+they allow the calculation of the time-averaged intensity I = P/[π(FWHM/2)2]. Cal-
+15
+2. MATERIALS AND METHODS
+ibration of the diameter d(PSTED) of the eﬀective focal ﬂuorescence spots formed by a
+certain STED power PSTED was performed by STED-FCS measurements of ﬂuorescent
+lipid analogues in supported lipid bilayers (SLBs), for that such lipid bilayers provide a
+two-dimensional free diﬀusing system of molecules, labelled with the same ﬂuorophores
+used in our cellular experiments. The confocal FWHM being determined by ﬂuorescent
+beads (d(PSTED = 0) ∼ 240 nm), the other eﬀective diameters d(PSTED ̸= 0) can be
+calculated by performing STED-FCS measurements on supported lipid bilayers and
+using the relation:
+d(PSTED = 0)
+d(PSTED)
+=
+s
+tD(PSTED=0)
+tD(PSTED)
+(2.1)
+where tD stands for the transient times correspondent to each given PSTED. The re-
+lation above stems from the fact that the lipids in SLBs undergo two-dimensional free
+diﬀusion, so that the diﬀusion time scales proportionally with the diﬀusion area.
+The SLBs were prepared based on a procedure described in detail elsewhere55.
+The lipid DOPC (1,2-dioleoyl-sn-glycero-3-phosphocholine, Avanti) and the ﬂuorescent
+lipid analogue (DPPE-Atto647N, Atto-Tec) were mixed in organic solvents (Chloro-
+form/MeOH 1:1) at a lipid concentration of ∼ 1 mg/ml. The ratio of labelled lipids
+per non-labelled ones was approximately 1:10,000. 50 µl of such solution were dropped
+onto a piranha-cleaned (Femto-RF, Diener Electronic) standard microscope cover glass
+(diameter 22 mm, no. 1.5 thickness) and spin-coated at 60 Hz for about one minute.
+The cover glass was then placed in a microscopy chamber and subsequently the dry thin
+lipid ﬁlm was rehydrated with 500 µl buﬀer solution (150 mM NaCl, 10 mM HEPES).
+Such bilayers were stable for several hours.
+2.1.3
+STED-FCS cellular measurements
+We assessed the dynamics of ﬂuorescent labelled molecules by placing the focused co-
+centered excitation and STED beams on random positions at the plasma membrane.
+Near the edge of cells, lipid diﬀusion is probed concurrently in the apical and basal
+membranes (Fig. 2.3 A). That happens because the eﬀective observation volume is
+decreased only laterally by the STED beam, remaining approximately 700 nm long in
+the axial direction (for excitation wavelength of 640 nm), encompassing both mem-
+branes when they are close enough. In contrast, in the cell body of NRK cells, the
+measurements were performed at the basal membrane, since the bulky cell body of
+these cells features a separation between apical and basal membranes of ∼2 to 7 µm,
+which ensures STED-FCS experiments to probe only the basal membrane (Fig. 2.3 B).
+Measurements were taken at room temperature and completed before any signiﬁcant
+morphological changes in the cell could occur.
+All measurements were carried out
+during 10 s, providing a correlation time two orders of magnitude longer than the
+16
+2.1 STED-FCS
+Figure 2.3: Schematics showing two diﬀerent ways of probing lipid diﬀusion
+with STED-FCS - (A) Near the edge of a cell, the distance between apical and basal
+membranes is in the order of a few hundred nanometers56. In STED-FCS experiments,
+the focal volume is reduced only in the x-y plane (diameter varying from 240 to 40 nm),
+rendering its z dimension unaltered (∼ 640 nm). That implies that in lamellipodia, or
+close to the cell edge, STED-FCS probes lipid diﬀusion in both membranes at the same
+time, averaging them. (B) Conversely, when the separation between the membranes is in
+the micrometer range (as it is the case in the cell body of many cells), STED-FCS ensures
+to probe only the basal membrane.
+17
+2. MATERIALS AND METHODS
+typical transient time of the labelled lipids through the confocal observation area. For
+each cell analysed and for each observation spot diameter d (given as the full width at
+half maximum (FWHM)), the calculated apparent diﬀusion coeﬃcient resulted from
+the average of at least 5 and up to 8 repetitions of the STED-FCS measurements at
+the given cell. Correlation data were recorded with lipid concentrations resulting in a
+temporal average of particle number N ∼ 0.3 to 2 ﬂuorescent particles for the highest
+STED power and N ∼ 10 to 30 ﬂuorescent particles for confocal recording.
+2.1.4
+STED-FCS analysis
+In FCS, the ﬂuorescence signal, after being autocorrelated as described in Eq.(1.3), is
+ﬁtted to a model which properly accounts for the physical nature of the dynamics under
+investigation and for the photophysics of the ﬂuorescent label. We have used the dye
+Atto 647N (Atto-Tec) as a label in all experiments to probe lipid diﬀusion. Therefore,
+experiments on lipid diﬀusion were ﬁtted with the following model44:
+G(τ) = 1 + 1
+N GD(τ)GDS1(τ)GDS2(τ),
+(2.2)
+where
+GD(τ) =
+1
+1 +
+
+τ
+tD
+α
+(2.3)
+describes two-dimensional, one-component diﬀusion dynamics and the terms
+GDS1(2)(τ) = 1 +
+B1(2)
+1 − B1(2)
+exp
+
+−τ
+tDS1(2)
+
+(2.4)
+stand for the population of two dark states of the labelled molecule. Here, one of the
+dark states is the triplet state, the other being an additional dark state, characteristic
+of Atto647N-labelled lipids44.
+In the equations above, τ is the time of correlation,
+N stands for the temporal average of the number of molecules in the focal spot, tD
+denotes the average transit time of the ﬂuorescent molecules through the focal spot, α
+represents an anomalous diﬀusion exponent and B1(2) stand for the equilibrium fraction
+of molecules in the correspondent dark state, with tDS1(2) being their characteristic
+correlation time. Diﬀusion was considered to be two-dimensional for that in the spatio-
+scale relevant for STED-FCS measurements (<240 nm), the plasma membrane can be
+regarded as a two-dimensional sample.
+For free diﬀusion, α equals 1. Nevertheless, this equality does not hold for non-
+Brownian (anomalous) diﬀusion, due to the fact that for anomalous diﬀusion, the mean
+square displacement ⟨r⟩2 of the molecule’s diﬀusion is not linear with time t, i.e.
+⟨r⟩2 = 4Dapptα
+(2.5)
+18
+2.1 STED-FCS
+where Dapp is an apparent diﬀusion coeﬃcient.
+Diﬀerently, for the investigation of diﬀusion of the Ras protein in the plasma mem-
+brane, another labelling strategy was employed. In that case, SNAP-tagged H-rasG12V
+proteins expressed in BHK cells were ﬂuorescently labelled with the Silicon-containing
+rhodamine (SiR) dye57. Because the binding of the dye to the SNAP-tagged protein
+does not occur in 100% of the cases, unbound dye may still remain on the surface of the
+plasma membrane. For this reason, correlation data from experiments on Ras diﬀusion
+were ﬁtted with a model of 2-component diﬀusion, where one of the components under-
+goes free diﬀusion (the unbound dye) while the second component diﬀuses anomalously
+(the SNAP-tagged H-rasG12V):
+G(τ) = 1 + 1
+N GD(τ)GDS(τ),
+(2.6)
+where
+GD(τ) =
+C
+1 +
+
+τ
+tD1
+ +
+(1 − C)
+1 +
+
+τ
+tD2
+α
+(2.7)
+describes two-dimensional, two-component diﬀusion dynamics and the term
+GDS(τ) = 1 +
+B
+1 − B exp
+ −τ
+tDS
+
+(2.8)
+stands for the population of the triplet state of the SiR dye. Above, C is the fraction
+of dye molecules which are unbound, tD1 and tD2 are the average transit times of
+molecules through the focal spot for unbound and bound dye molecules, respectively.
+For the SiR dye, no population of further dark states was observed, reason why only
+one dark state (the triplet state) was included in the model.
+Concerning experiments on lipid diﬀusion, all correlation data were ﬁtted with Eqs.
+(2.2-2.4), where the amplitudes and characteristic times of the dark states were pre-
+ﬁxed parameters, since they depend only on the labelled lipid and its environment,
+being independent of cell type or pre-treatments applied to the cells. Similarly, the
+amplitude and characteristic time of the triplet state were pre-ﬁxed parameters in the
+analysis of Ras diﬀusion. Speciﬁcally, the ﬁtted values of tD, along with the diameter
+of the observation area, d, obtained through the calibration of the setup, allow for the
+calculation of the apparent diﬀusion coeﬃcient (Dapp):
+Dapp =
+d2
+8 tD ln 2.
+(2.9)
+When the apparent diﬀusion coeﬃcient is plotted as a function of the observa-
+tion area, or analogously, of the full width at half maximum, three distinct diﬀusion
+patterns can be discerned by STED-FCS, via the so called “diﬀusion law”: free dif-
+19
+2. MATERIALS AND METHODS
+Figure 2.4: Three distinct two-dimensional diﬀusion patterns, discernible by
+STED-FCS via the diﬀusion law - (A) Free (Brownian) diﬀusion, characterized by
+constant Dapp, independent of the observation diameter. (B) Trapping diﬀusion, marked
+by a decrease in Dapp as the FWHM is decreased (C) Compartmentalized diﬀusion, char-
+acterized by an increase in Dapp as the FWHM is decreased.
+20
+2.2 Sample preparation
+fusion, trapping diﬀusion and compartmentalized (or hop) diﬀusion48,52,53 (Fig.2.4).
+Free (Brownian) diﬀusion is analogous to a two-dimensional random walk. Its diﬀusion
+law is characterized by constant Dapp, that is independent of the observation diameter
+(FWHM). Trapping diﬀusion is marked by trapping events, when the diﬀusing molecule
+is transiently conﬁned to small regions where diﬀusion is hindered. One of the possible
+physical constructs that represent this motion is a two-dimensional random walk with
+mobile centers of short-range, weak attraction, where the mobility of the attraction cen-
+ters is much lower than the mobility of the diﬀusing particles. This diﬀusion pattern
+can be resolved by STED-FCS via its characteristic diﬀusion law, marked by a decrease
+in Dapp as the FWHM is decreased52. Compartmentalized diﬀusion is analogous to a
+two-dimensional random walk with partially reﬂecting barriers. In this diﬀusion pat-
+tern, Dapp increases as the FWHM is decreased, for that in this instance less barriers
+constrain the diﬀusion of molecules. Trapping and compartmentalized diﬀusion are two
+examples of anomalous diﬀusion.
+2.2
+Sample preparation
+2.2.1
+Cell culture and transfection
+IA32, NRK, IA32 2xKD, BHK and PtK2 cells were seeded on standard glass coverslips
+(diameter 18 mm, no. 1.5 thickness) to a conﬂuence of about 60% and grown at 37 ◦C in
+a water-saturated atmosphere of 5% CO2 in air. Primary cultures of oligodendrocytes
+were prepared from postnatal day 1 mouse brains. The oligodendroglial progenitor cells
+were grown for 7-10 days on an astrocyte layer, followed by the shake and subsequent
+cultivation on the polylysine-coated glass coverslips in high-glucose Dulbecco’s modiﬁed
+Eagle’s media (DMEM), complemented with bovine serum, penicillin/streptomycin,
+glutamax, sodium pyruvate, triiodothyronine, L-thyroxine and B-27 supplement.
+In order to transfect cultured PtK2 cells with MBP-GFP-TM construct, TransIT
+(Mirus Bio LLC) was used, following manufacturer instructions.
+Samples featuring
+75% conﬂuence were preferably taken.
+BHK cells were transfected using JetPRIME transfection reagent (Polyplus - trans-
+fection) with the following plasmids: pmGFP-H-rasG12V, pmGFP-H-rasG12V-R169/
+K170A or pmGFP-H-rasG12V-R128/135A. Plasmids were transfected alone or together
+with plasmid pcDNA3-asGal-1 in the case of depletion, or with plasmids pmRFP-Gal-1
+or pcDNA3-Gal-1 in the case of overexpression.
+2.2.2
+Labelling procedures
+The following labelling procedures were used in the experiments here-forth reported:
+Incorporation of ﬂuorescent lipid analogues into the plasma membrane
+21
+2. MATERIALS AND METHODS
+for STED-FCS measurements: To enable incorporation into cellular membranes,
+lipids of interest were primarily coupled to bovine serum albumin. Lipids were ﬁrst re-
+constituted in chloroform/methanol solution, for storage in fractionated aliquots. In or-
+der to have the lipids BSA-coupled, chloroform/methanol was aspired from one aliquot,
+containing 75 nmol of lipid analogues. They were then redissolved in 10 µl of absolute
+ethanol and vortexed vigorously. 1 ml of de-fatted BSA (in Dulbecco’s Modiﬁed Ea-
+gle Medium DMEM without phenol-red, buﬀered with 10 mM HEPES) was added in
+equimolar concentration to the lipids. Solution was centrifuged at high speed for 3 min
+to remove residual clumps. Supernatant was stored at +8 ◦C. In order to incorporate
+BSA-coupled lipid analogues into cellular membranes, cells were ﬁrst washed with 10
+mM HEPES-buﬀered DMEM medium without phenol-red. Next, BSA-coupled lipid
+analogues, diluted in HDMEM, were added in appropriate concentrations onto cells.
+After incubation with the labelling solution for 30 min at +4 ◦C, cells were brieﬂy
+washed with HDMEM. All lipid analogues used in our experiment were labelled with
+the ﬂuorescent lipophilic organic dye Atto647N (excitation max at 645 nm, emission
+max at 670 nm; Atto-Tec)44.
+Labelling of MBP, actin and plasma membrane in oligodendrocytes and
+PtK2 cells: To analyse the subcellular localization of the proteins and lipids of inter-
+est in primary oligodendrocytes and PtK2 cells we performed immunocytochemistry.
+The following antibodies were used in this study: rabbit polyclonal anti-MBP (DakoCy-
+tomat, Carpinteria, CA, USA), phalloidin coupled to Rhodamine dye and WGA coupled
+to Alexa-488 (Invitrogen). Secondary antibodies were purchased from Dianova.
+Labelling of F-actin in IA32, IA32 2xKD and NRK cells: Cells were seeded
+out on glass coverslips (no. 1.5 thickness) and allowed to adhere and spread for 20 h
+after which cells were washed 3x in PBS, and ﬁxed in 4% formaldehyde in PBS for 10
+min. Fixed cells were subsequently washed 3x in PBS, and permeabilized with 0.1%
+Triton X-100 in PBS for 5 min. The cells were then blocked for non-speciﬁc binding by
+treatment in 1% BSA in PBS for 10 min, washed 3x in PBS, and labelled with Abberior
+STAR 635 phalloidin (1 unit in PBS with 1% BSA) for 10 min. Labelled cells were
+washed 3x in PBS and mounted for imaging in Mowiol mounting media (6 g glycerol,
+2.4 g Mowiol, 6 ml dH2O, 12 ml 0.2 M Tris pH 8).
+2.2.3
+Drug treatments
+The following drug treatments were performed in some of the experiments presented in
+chapter 3:
+Cholesterol Oxidase: The cells were treated with 1 U/ml Streptomyces spec.
+COase (Sigma-Aldrich) in HDMEM (and washed afterwards in HDMEM) for 30 min
+under culture conditions. Treatment was performed before the insertion of the ﬂuores-
+cent lipid analogues into the plasma membrane.
+22
+2.3 Monte Carlo simulations for STED-FCS measurements
+Blebbistatin: Treatment with 15 µM Blebbistatin (EMD Millipore) in HDMEM
+(and washed afterwards in HDMEM) for 2 h under culture conditions.
+Latrunculin B: Treatment with 1 µM (100 nM) Latrunculin B (Sigma-Aldrich) in
+HDMEM (and washed afterwards in HDMEM) for 15 min under culture conditions was
+performed for IA32 cells (NRK cells). NRK cells were found to be more sensitive to this
+drug treatment than IA32 cells, in a way that for these cells reduction of Latrunculin B
+concentration to 100 nM produced similar results to 1 µM. Treatment was performed
+before the insertion of the ﬂuorescent lipid analogues into the plasma membrane.
+CK-666: Treatment with 100 µM CK-666 (EMD Millipore) in HDMEM (and
+washed afterwards in HDMEM) for 4 h under culture conditions. Treatment was per-
+formed before the insertion of the ﬂuorescent lipid analogues into the plasma membrane.
+In addition, insertion of ﬂuorescent lipid analogues and STED-FCS measurements were
+carried out in 100 µM CK-666 in HDMEM.
+2.3
+Monte Carlo simulations for STED-FCS measurements
+Via custom written routines in Matlab, we performed Monte Carlo simulations to gen-
+erate ﬂuorescence time traces of 2-dimensional diﬀusion of ﬂuorescent molecules diﬀus-
+ing through an observation spot with a Gaussian-shaped ﬂuorescence detection proﬁle.
+The diﬀusion area comprised randomly sized compartments. Within a compartment
+the molecules were assumed to diﬀuse freely while crossing from one compartment to
+another was only possible with a given “hopping probability” (Phop). This was imple-
+mented in the following way: If free diﬀusion with diﬀusion constant Dfree would have
+led the lipid to cross the compartment boundary, the eﬀective transposition would have
+taken place in only a fraction of such cases (being deﬁned by Phop) while in all other
+cases the molecule would be reﬂected back to the original compartment. The simula-
+tion area was a circle of 3 µm diameter and the compartmentalization of this area was
+implemented as a Voronoi mesh on a random distribution of seed points. We deﬁned
+the square root of the average compartment area as the average compartment size (L).
+The average compartment size, the hopping probability and the free diﬀusion coeﬃ-
+cient completely describe our simulation model. In most cases a simulation placed 100
+independent molecules in the simulation area and took a time span of 200 s with 20 µs
+time steps.
+The simulated ﬂuorescence time traces were auto-correlated and the correlation
+curves were ﬁtted to the aforementioned two-dimensional diﬀusion model. The transient
+time tD was converted to an apparent diﬀusion coeﬃcient using Dapp = d2/(8tDln(2))
+with diameter d of the observation spot given as the FWHM. Fitting of the exper-
+imentally measured Dapp(d) dependence was achieved by performing simulations on
+iteratively ﬁner spaced grids based on the minimization of the squared distance to the
+23
+2. MATERIALS AND METHODS
+measured values. After reaching an approximate accuracy of 1x10−10 cm2/s in Dfree,
+0.01 in Phop and 5 nm in L, the program stopped running the iterations and displayed
+the most pertinent set of ﬁtted parameters achieved.
+24
+3
+Lipid compartmentalization at
+the plasma membrane
+In the last three decades, many important discoveries have changed our view of the
+plasma membrane structure15,22,30,33,44,58. In this context, the cytoskeleton has emerged
+as a key modulator of the lateral diﬀusion of membrane proteins.
+The analogous
+cytoskeleton-dependent lipid diﬀusion has been proposed26, but this remains a highly
+debatable concept29. However, here we report the observation of cytoskeleton-modulated
+compartmentalized diﬀusion of phospholipids in the plasma membrane of living cells
+attained using a ﬂuorescent lipid analogue in combination with STED-FCS. Compart-
+mentalized diﬀusion was in particular found to be dependent on the F-actin branching
+nucleator Arp2/3. These ﬁndings provide solid evidence for that the Arp2/3-branched
+actin cytoskeleton plays a pivotal role in the dynamical architecture of the plasma
+membrane, potentially regulating its fundamental processes.
+3.1
+Lipid compartmentalization hypothesis
+The ﬂuid mosaic model for biological membranes proposed by Singer and Nicolson in
+19726 is a milestone in membrane research. Nevertheless, novel methods for probing
+dynamics of molecular structures developed in the last decades have brought a wealth of
+biological insight that contradicts the Singer-Nicholson model, particularly in the case
+of the plasma membrane58. For example, Brownian diﬀusion of proteins and lipids,
+being one of the main assumptions of that model, has been shown to be largely inaccu-
+rate15,22,30,33,44,47,58. A variety of experimental techniques have shown that the lateral
+motion of proteins in the plasma membrane is constrained by diﬀerent mechanisms,
+many of them being ultimately connected to the cortical actin cytoskeleton15,30,52,59.
+In addition, SPT experiments utilizing gold particles or quantum dots (QDs) have
+further suggested that even phospholipid diﬀusion in the outer leaﬂet of the plasma
+25
+3. LIPID COMPARTMENTALIZATION AT THE PLASMA
+MEMBRANE
+membrane is constrained27,60, presumably by the cortical actin cytoskeleton.
+In view of these ﬁndings, which suggest the structure and organization of the plasma
+membrane to be strongly coupled to the cortical actin cytoskeleton, the picket-fence
+model was proposed26. This model hypothesizes that the actin ﬁlaments underlying
+the plasma membrane act as barriers that constrain the diﬀusion of transmembrane
+proteins. The agglomeration of such proteins, anchored to actin ﬁlaments, would in
+turn constrain the diﬀusion of other proteins and of lipids, creating thus cytoskeleton-
+based compartments throughout the plasma membrane (Fig.3.1). The notion that the
+cytoskeleton plays a main role in diﬀusion through plasma membrane and in plasma
+membrane function ﬁnds resonance in important ﬁndings in membrane research. Stud-
+ies performed on model membranes bound to a layer of actin mesh showed that diﬀusion
+of lipids and proteins was hindered by the mesh, and that such reduction in mobility
+was correlated to the actin density61. Nanoclusters of numerous membrane-associated
+proteins were reported to be colocalized with actin62 and assembled via interaction
+with dynamic actin ﬁlaments at the cortex33. Finally, the cytoskeleton was found to
+be directly responsible for controlling the activity of structures like mechanosensitive
+ion channels63.
+Nevertheless, the picket-fence model has encountered several obstacles for its full
+acceptance29,31,64. While compartmentalized diﬀusion of membrane proteins in living
+cells was observed by diﬀerent methods, the same has not been conﬁrmed for phospho-
+lipids, which was thus far only supported by SPT experiments27,60. In these experi-
+ments, gold particles27 and QDs60 were so far employed in order to reach the required
+temporal resolution. Such probes are artefact prone due to their prominent size (orders
+of magnitude bigger than the lipids themselves), and due to the diﬃculty in validation
+of their valence towards the target molecule, inducing possible oligomerization31,64. In
+addition, the validity of SPT reports on compartmentalized diﬀusion was drawn into
+question by a study showing that the irregularity of plasma membrane topography can
+induce apparent compartmentalized diﬀusion, as observed by SPT65.
+3.2
+Detecting lipid compartmentalized diﬀusion via STED-
+FCS
+In order to elucidate the dilemma regarding lipid compartmentalized diﬀusion (also
+called hop diﬀusion), we have applied STED-FCS to probe the diﬀusion of a phos-
+pholipid analogue labelled with a small organic dye (Fig.3.3) in living cells, at high
+temporal and spatial resolution. STED-FCS allows a systematic probing of molecular
+diﬀusion with spatial resolution ranging from diﬀraction-limited 240 nm to below 40
+nm, a range that is comparable in size to the postulated actin cytoskeleton mediated
+compartments28,54.
+26
+3.2 Detecting lipid compartmentalized diﬀusion via STED-FCS
+Figure 3.1: Plasma membrane compartmentalization hypothesis - (A, B) Repre-
+sentative STED images of F-actin labelled with Abberior STAR 635 phalloidin in NRK and
+IA32 cells, respectively. Scale bar is 1 µm. (C) Schematics showing branched networks that
+partially conﬁne two-dimensional diﬀusion of molecules. Within compartments molecules
+are assumed to diﬀuse freely, and in the event of hitting the boundaries of a compartment,
+transposition to the adjacent compartment occurs with a certain hopping probability.
+27
+3. LIPID COMPARTMENTALIZATION AT THE PLASMA
+MEMBRANE
+Figure 3.2: In-silico STED-FCS experiments - Simulations show characteristic de-
+pendencies of the apparent diﬀusion coeﬃcient Dapp on the full width at half maximum
+(FWHM) of the observation spot, assuming a model for compartmentalized diﬀusion as de-
+picted in Fig.3.1 C. As the FWHM is decreased, the apparent diﬀusion coeﬃcient increases.
+Characteristic compartment size (L), free diﬀusion coeﬃcient (Dfree) and hopping proba-
+bility (Phop) deﬁne the diﬀusion model. As it can be observed, only strong conﬁnement
+(small Phop) renders clear patterns of compartmentalized diﬀusion.
+28
+3.2 Detecting lipid compartmentalized diﬀusion via STED-FCS
+Figure 3.3: Lipid probes used in SPT and STED-FCS experiments - Schematics
+of lipid probes used in SPT and in STED-FCS, put in perspective. Gold particle (∼40
+nm in diameter) linked to lipid by Fab antibody and QD (∼20 nm in diameter) linked to
+lipid via streptavidin, as often used in SPT. Both probes are functionalized via polymer
+coating, which further enhances their eﬀective size. Possible oligomerization induced by
+SPT probes is illustrated for the QD. STED-FCS lipid probe stands for a ﬂuorescent lipid
+analogue (∼1 nm in diameter). Sketch with courtesy of Mathias Clausen, (University of
+Oxford)
+Validating the method, we ﬁrst performed in-silico STED-FCS experiments of dif-
+fusion within a heterogeneously compartmentalized lattice with a characteristic average
+compartment length L. Within compartments molecules were assumed to diﬀuse freely
+with a diﬀusion coeﬃcient Dfree, while transposing compartment boundaries was pos-
+sible with a certain “hopping probability” Phop.
+These experiments show that the
+compartment barriers slow down diﬀusion for observation diameters much bigger than
+the compartments themselves. The reason for this is the increasing number of barriers
+the probe has to transpose while diﬀusing through the focal spot. As the observation
+diameter is decreased, the apparent diﬀusion coeﬃcient signiﬁcantly increases because
+in this instance free diﬀusion inside the compartment is probed (Fig.3.2). Speciﬁcally
+for small Phop, i.e. strong conﬁnement, compartmentalized diﬀusion can be clearly dis-
+tinguished from free diﬀusion, which is characterized by a constant diﬀusion coeﬃcient
+that is independent of the FWHM.
+While compartmentalized diﬀusion of ﬂuorescent phospholipid analogues was not
+observed in initial STED-FCS studies in live PtK2 cells44,47, we now report for the ﬁrst
+time that it becomes evident via STED-FCS in two live cell types, NRK cells and in
+IA32 cells (Ink4a/Arf (-/-) mouse ﬁbroblasts)66 (Fig.3.4). In this study, we used the
+phospholipid di-palmitoyl-phosphoethanolamine (DPPE) labelled with Atto647N44,47.
+Prominent compartmentalized diﬀusion of lipids has previously been reported by SPT
+studies27,60 in these cell types, but those results had never been validated by any other
+29
+3. LIPID COMPARTMENTALIZATION AT THE PLASMA
+MEMBRANE
+technique or by the use of a less invasive probe, remaining thus far debatable.
+Figure 3.4: Experimental observation of lipid compartmentalized diﬀusion by
+STED-FCS - (A, B) Dapp(FWHM) dependencies for DPPE-Atto647N diﬀusion in NRK
+and IA32 cells, respectively. Clear compartmentalized diﬀusion patterns are observed. ⋆⋆P
+<0.01 (unpaired t test). Error bars are standard error of the mean. In A, n = 32 cells;
+in b, n = 33 cells. Fitting of the experimental data resulted for both cell types Dfree =
+0.8 µm2/s and Phop = 0.1. The characteristic compartment size was found to be 80 nm
+for NRK and 150 nm for IA32 cells. Insets: representative voronoi lattices (red) relative
+to the correspondent compartment sizes as well as simulated diﬀusion trajectories (blue)
+correspondent to the ﬁtted parameters. Scale bars: 250 nm.
+These STED-FCS experiments resulted in a clear pattern of compartmentalized
+diﬀusion as indicated by a signiﬁcant increase of Dapp towards smaller observation
+diameters. Monte Carlo simulations were used to ﬁt the experimental data to a model of
+free diﬀusion constrained by a heterogeneously compartmentalized lattice. The ﬁtting
+parameters that statistically best described the data were for both cell types Dfree =
+0.8 µm2/s and Phop = 0.1, and L = 80 nm for NRK cells and L = 150 nm for IA32
+cells.
+3.3
+Investigation of molecular mechanisms underlying lipid
+compartmentalization
+In order to assess the underlying causes for compartmentalized diﬀusion, we have sys-
+tematically performed STED-FCS experiments on IA32 and NRK cells where the actin
+cytoskeleton was modulated, membrane cholesterol was depleted, or myosin II activity
+30
+3.3 Investigation of molecular mechanisms underlying lipid
+compartmentalization
+was inhibited. Actin cytoskeleton modulation was achieved by treating cells with either
+Latrunculin B (latB) or CK-666. These drugs perturb the actin cytoskeleton through
+diﬀerent mechanisms: while latB prevents the polymerization of all types of F-actin
+networks by sequestering G-actin, CK-666 is a recently discovered67 small molecule
+that interferes with the dynamic cortical F-actin networks by speciﬁc inhibition of
+the Arp2/3 complex, the actin nucleator that enables the creation of branched actin
+networks68.
+3.3.1
+Cytoskeleton modulation signiﬁcantly impacts lipid compart-
+mentalized diﬀusion
+Cells treated with latB showed faster DPPE diﬀusion, markedly NRK cells (Fig.3.5 A,
+C). Compartmentalized diﬀusion was still observed, although not strictly statistically
+signiﬁcant at conﬁdence level 95% (Fig 3.5 B, E, and Appendix). Contrastingly, cells
+treated with CK-666 showed remarkably faster DPPE diﬀusion, where the diﬀusion
+coeﬃcient assumed approximately a constant value, independent of the observation
+diameter (Fig.3.5 A, B, C, E), which is indicative of free diﬀusion.
+In order to further investigate the eﬀects of Arp2/3 depletion in compartmentalized
+lipid diﬀusion, we performed STED-FCS experiments on IA32 MEFs that had been
+additionally depleted of p34Arc and Arp2 by use of a lentiviral shRNA knockdown
+system (IA32 2xKD cells)66. The resulting dependence of Dapp(FWHM) is compatible
+with free diﬀusion (Fig.3.5 D), reinforcing that Arp2/3 depletion suppresses compart-
+mentalized diﬀusion. We have observed that DPPE diﬀusion in 2xKD is slower than in
+CK-666-treated IA32 cells (Fig.3.5 E), possibly due to reduced membrane tension and
+increased curvature in 2xKD cells, although this remains to be proven. In fact, these
+two diﬀerent Arp2/3 depletion approaches render distinct conformations of the F-actin
+cytoskeleton and overall cell shape (Fig.3.6).
+In order to assess possible diﬀerences between lipid diﬀusion in the apical and
+basal membrane of cells, due to the distinct conformations of the apical and basal
+sub-membranous actin cytoskeleton56, we performed STED-FCS measurements in the
+basal membrane under the cell body of NRK cells. These measurements resulted in
+the observation of faster and slightly less compartmentalized diﬀusion, as compared to
+the measurements encompassing both membranes near the cell edge (Fig.3.7). This
+is consistent with a lower cortical actin density at the basal membrane, as compared
+to the apical membrane, and/or to a lower cortical actin density in the cell body, as
+compared to the edge of the cell56.
+31
+3. LIPID COMPARTMENTALIZATION AT THE PLASMA
+MEMBRANE
+Figure 3.5: Cytoskeleton depletion eﬀect on lipid diﬀusion in NRK and IA32
+cells - (A) Eﬀect on lipid diﬀusion of Latrunculin B and CK-666 treatment in NRK cells.
+(B) Summary of the data in A. (C) Eﬀect on lipid diﬀusion of Latrunculin B and CK-
+666 treatment in IA32 cells. (D) Comparison of DPPE diﬀusion patterns, as observed by
+STED-FCS, between IA32 and IA32 2xKD cells. (E) Summary of the data in C and D. ⋆⋆P
+<0.01, ⋆P <0.05, NS, not signiﬁcant (two-tailed unpaired t test). Error bars are standard
+error of the mean. Results of the statistical test on top of the columns representing FWHM
+∼ 40 nm refer to comparison with the precedent column (FWHM = 240 nm). Results of the
+statistical test on top of the columns representing FWHM = 240 nm refer to comparison
+with the control (FWHM = 240 nm). n stands for the number of cells.
+32
+3.3 Investigation of molecular mechanisms underlying lipid
+compartmentalization
+Figure 3.6: Arp 2/3 depleted cells - (A, B) Representative STED images of F-actin
+labelled with Abberior STAR 635 phalloidin in CK-666-treated IA32 cells and 2xKD cells,
+respectively. (C) Untreated IA32 cell, for comparison. Scale bars are 3 µm.
+33
+3. LIPID COMPARTMENTALIZATION AT THE PLASMA
+MEMBRANE
+Figure 3.7: Diﬀerent patterns of compartmentalized diﬀusion in NRK cells -
+Diﬀusion in lamellipodia and in the cell body, as observed by STED-FCS. ⋆⋆P <0.01, ⋆P
+<0.05 (two-tailed unpaired t test). Error bars are standard error of the mean. Results of
+the statistical test on top of the columns representing FWHM ∼ 40 nm refer to comparison
+with the precedent column (FWHM = 240 nm). Results of the statistical test on top of
+the columns representing FWHM = 240 nm refer to comparison with the control (FWHM
+= 240 nm). n stands for the number of cells.
+3.3.2
+Cholesterol depletion and myosin II inhibition do not aﬀect lipid
+compartmentalized diﬀusion
+Inhibition of myosin II with blebbistatin and cholesterol depletion using cholesterol
+oxidase (COase) had no eﬀect on DPPE diﬀusion, in neither NRK nor IA32 cells
+(Fig.3.8). Myosin II works as a regulator for actin dynamics, allowing the cell to tune
+its cortical actin mesh disposition. Blebbistatin is a small molecule which speciﬁcally
+inhibits myosin II. The result that diﬀusion was unaﬀected by blebbistatin treatment
+rules out myosin-based contractility as a reason for the observed compartmentalized
+diﬀusion. In addition, the observation that DPPE compartmentalized diﬀusion was
+unaltered after cholesterol depletion with COase indicates that compartmentalization
+of lipids is not due to cholesterol-mediated interactions.
+It has been reported that
+cholesterol depletion may lead to detachment of the plasma membrane from the actin
+cytoskeleton as a secondary eﬀect59 63. However, the level of cholesterol depletion used
+in our experiments was not high enough in order to make this side eﬀect signiﬁcant.
+3.4
+Discussion
+The fact that cytoskeleton-modulated, compartmentalized lipid diﬀusion could be clearly
+observed by STED-FCS in NRK and in IA32 cells, but not in previously investigated
+PtK2 cells44,47, poses the question of whether the membrane compartmentalization
+34
+3.4 Discussion
+Figure 3.8: Cholesterol depletion and myosin II inhibition do not alter lipid
+compartmentalization - (A, C) Cholesterol depletion and myosin II inhibition in NRK
+and IA32 cells, respectively.
+No signiﬁcant change in diﬀusion pattern occurred after
+treatment with Cholesterol Oxidase and Blebbistatin. (C, D) Summary of the data. ⋆⋆P
+<0.01, ⋆P <0.05, NS, not signiﬁcant (two-tailed unpaired t test). Error bars are standard
+error of the mean. Results of the statistical test on top of the columns representing FWHM
+∼ 40 nm refer to comparison with the precedent column (FWHM = 240 nm). Results of the
+statistical test on top of the columns representing FWHM = 240 nm refer to comparison
+with the control (FWHM = 240 nm). Here, n stands for the number of cells.
+35
+3. LIPID COMPARTMENTALIZATION AT THE PLASMA
+MEMBRANE
+exerted by the cytoskeleton is inherently cell type-speciﬁc, or a generic phenomenon.
+To answer this question, we notice that compartmentalized and free diﬀusion is only
+distinguishable by STED-FCS in cases where the average compartment size falls within
+the size range assessed by this technique, and further that the conﬁnement strength
+is suﬃciently large. In addition, compartmentalized diﬀusion combined with trapped
+diﬀusion might further fade the observation of that diﬀusion mode53.
+A combination of these factors can explain the observation of apparent free diﬀusion
+for PtK2 cells, as our simulation model successfully describes DPPE diﬀusion on PtK2
+cells47 with L = 25 nm, Phop = 0.25 and Dfree = 0.7 µm2/s (Fig.3.9). This explanation
+is further experimentally supported by the fact that CK-666-treated PtK2 cells show
+signiﬁcantly faster diﬀusion of DPPE, as compared to untreated cells (average diﬀusion
+coeﬃcient of 0.63 µm2/s, contrasting to 0.40 µm2/s in untreated PtK2 cells), indicating
+that also in this cell type lipid diﬀusion is modulated by the Arp2/3-branched actin
+networks.
+Figure 3.9:
+Simulation model for phospholipid diﬀusion in PtK2 cells - (A)
+Experimental DPPE diﬀusion coeﬃcient for diﬀusion in the plasma membrane of untreated
+and CK-666-treated PtK2 cells (FWHM = 240 nm). ⋆⋆P <0.01 (two-tailed unpaired t test).
+(B) In silico STED-FCS experiments for an average compartment size L = 25 nm, free
+diﬀusion coeﬃcient Dfree = 0.7 µm2/s and hopping probability Phop = 0.25 and = 1. The
+in silico data describes accurately the experimental FCS data for untreated and CK-666-
+treated PtK2 cells. The curve correspondent to Phop = 1 can also be obtained by setting
+L ≫ 240 nm. The region in yellow corresponds to the currently accessible FWHM range
+for STED-FCS experiments. As can be observed, very small compartment sizes preclude
+the observation of compartmentalized diﬀusion.
+Previous studies by SPT using gold particles27 have shown that phospholipids
+(DOPE) are compartmentalized in the plasma membrane of NRK cells in compart-
+ments with a mean diameter of 230 nm, within which they diﬀuse freely with a median
+diﬀusion coeﬃcient of 5.4 µm2/s. Also, previous studies by SPT using QDs60 have
+36
+3.4 Discussion
+shown that most of DPPE molecules are conﬁned in IA32 cells within compartments
+with a mean diameter of 150 nm, within which they diﬀuse freely with a median dif-
+fusion coeﬃcient of 0.6 µm2/s. Now, for the ﬁrst time, those studies are validated
+with a diﬀerent technique, utilizing a small organic dye as a lipid label. Diﬀerences in
+the compartment sizes and diﬀusion coeﬃcient within compartments, as determined by
+diﬀerent techniques, may stem from the diﬀerent probes utilized in each case. Never-
+theless, our data is not satisfactorily described by our simulation model if the diﬀusion
+coeﬃcient within compartments is ﬁxed to 5.4 µm2/s (Fig.3.10), as reported by Kusumi
+and colleagues27. This suggests that the observation of such fast diﬀusion might be
+induced by the large gold particle utilized in that experiment, which wobbles in the
+extra-cellular medium where the viscosity is lower than in the plasma membrane by
+two orders of magnitude31.
+Figure 3.10: Comparing simulation parameters for phospholipid diﬀusion in
+cells - (A, B) Experimental DPPE diﬀusion coeﬃcient for diﬀusion in the plasma mem-
+brane of NRK and IA32 cells, respectively, and in-silico experiments based on diﬀusion
+through a heterogeneously compartmentalized lattice. In both cases, the blue solid line
+corresponds to the experimental data, the orange dashed line corresponds to the curve
+that best ﬁtted our experimental data (without pre-deﬁned constraints), and the green
+dashed line corresponds to the best ﬁt obtained with the constraint Dfree = 5.4 µm2/s. In
+both plots, n stands for the number of measured cells.
+In summary, STED-FCS has allowed a minimally invasive observation of lipid com-
+partmentalized diﬀusion on the plasma membrane of living cells and has revealed with
+unprecedented detail the underlying mechanisms that regulate such compartmentaliza-
+tion. In particular, this study conclusively pinpoints the Arp2/3-complex as a regula-
+tor of the compartmentalization observed in the plasma membrane. In fact, Arp2/3
+is a major component in the orchestration of the numerous tasks performed by the
+actin cytoskeleton, being involved in polymerization, organization and recycling of the
+37
+3. LIPID COMPARTMENTALIZATION AT THE PLASMA
+MEMBRANE
+actin networks69. Furthermore, recent studies using the Arp2/3 inhibitor CK-666 and
+Arp2/3-depleted mammalian cells have revealed new roles of the Arp2/3-dependent
+cortical cytoskeleton in a variety of cellular processes including matrix sensing, cyto-
+plasmic streaming, spindle positioning and cell-cell junction regulation66,70–72. Here,
+we demonstrate for the ﬁrst time the inﬂuence of Arp2/3 regulation on lipid diﬀusion
+in living cells.
+Following these results, we are compelled to infer that compartmentalization of
+lipids by the actin cytoskeleton is a fundamental cellular process, independent of cell
+type. Partial compartmentalization of membrane lipids and proteins may be associated,
+for example, with localized signalling28. In this context, yet another form of conﬁne-
+ment promoted by the cytoskeleton, i.e., one-dimensional diﬀusion of integral mem-
+brane proteins along actin ﬁlaments, was shown to enhance the interaction probability
+of less abundant proteins, thereby potentially triggering important cellular events73.
+The determination of the precise structural and molecular mechanisms by which the
+cytoskeleton performs lipid compartmentalization, as well as the mechanisms by which
+it may be implied in fundamental processes such as cell signalling, are exciting open
+questions that emerge from this evolving picture of the plasma membrane.
+Concluding, a model for membrane organization that does not acknowledge the sym-
+biosis between the plasma membrane and the cytoskeleton will be biologically oversim-
+pliﬁed. Supporting the picket-fence model, our ﬁndings extend the organizing principles
+proposed by the ﬂuid mosaic model by incorporating the underlying mechanism that
+governs the “ﬂuidity” of the mosaic.
+38
+4
+Transient trapping of plasma
+membrane molecules
+A remarkable feature of plasma membrane dynamics is that the diﬀusion of many
+molecules is marked by trapping events44,47,74–76, which are characterized by transient
+conﬁnement of molecules in small regions of the plasma membrane.
+This diﬀusion
+pattern is discernible from free and compartmentalized diﬀusion by STED-FCS via
+the assessment of the apparent diﬀusion coeﬃcient, which for trapping diﬀusion de-
+creases as the observation diameter is decreased52,53 (Fig.2.4 B). The precise nature
+of these trapping events, i.e., the broad principles that govern this type of anoma-
+lous diﬀusion, are poorly understood. Trapping diﬀusion has been attributed to, for
+example, transient and cholesterol-assisted binding to other less mobile molecules or
+molecular complexes (often referred to as nanodomains), interactions of membrane
+molecules with the cortical cytoskeleton and long-range attraction between membrane
+proteins44,47,77,78. Furthermore, transient conﬁnement of membrane molecules happens
+on spatio-temporal scales that challenge currently available biophysical methods22,25.
+Theoretical works can recreate trapping events based on a construct of nano-sized re-
+gions of higher viscosity52,53, centers of short-range, weak attraction distributed across
+the plane of diﬀusion79, as well as centers of repulsion80. This variety of possibilities
+illustrate the diversity of physico-chemical backgrounds on which trapping diﬀusion
+may rely. In this chapter, we examine two biological systems where trapping events (or
+their absence) play a crucial role in plasma membrane function. Next, the theoretical
+principles underlying the characteristic diﬀusion law for trapping diﬀusion are brieﬂy
+discussed.
+39
+4. TRANSIENT TRAPPING OF PLASMA MEMBRANE MOLECULES
+4.1
+Lipid diﬀusion in myelin sheath
+The myelin sheath is a modiﬁed extension of the plasma membrane of speciﬁc cells,
+which insulates the axons of neurons by enwrapping them in a multilayered fashion.
+While Schwann cells originate myelin sheath in the peripheral nervous system, oligo-
+dendrocytes are responsible for providing the central nervous system with this special
+membrane. Each myelin-generating cell envelops only one segment of the axon. Be-
+tween adjacent myelin-wrapped parts of the axon, short portions are left uncovered,
+the so-called nodes of Ranvier81. The combination of myelinated segments of axon
+interspersed among nodes of Ranvier enables saltatory conduction, allowing high-speed
+nerve impulse propagation82.
+4.1.1
+Myelin membrane sheets: a unique biological membrane
+The history of myelin research is interconnected with the history of plasma membrane
+investigation. The unit membrane model, proposed by J.D. Robertson, was inspired by
+electron micrographs featuring a remarkable continuity of the laminar myelin sheath,
+forming a spiral around cross-sectional images of axons5. When Singer and Nicolson
+proposed the ﬂuid mosaic structure of biological membranes, they considered myelin as
+a possible exception of their model, for which the ﬂuid character of membranes would
+not apply6.
+Figure 4.1: Oligodendrocytes - Cultured oligodendrocytes ﬁxed with PFA 4% + GTA
+0.25% on day 5 and immunostained for MBP (cyan), rhodamine-phalloidin (red) and WGA-
+488 leptin (green), for imaging of compact myelin sheets, actin and glycoproteins, respec-
+tively. Glycoproteins and actin are absent in oligodendrocyte compact sheets. Scale bar is
+10 µm. Images with courtesy of Olena Steshenko (Max Planck Institute for Experimental
+Medicine, G¨ottingen).
+Many factors contribute to the distinction of myelin membrane sheets from ordi-
+nary plasma membranes: high abundance of lipids (80% of its dry weight) and low
+amount of proteins, as well as a peculiar lipid composition (enrichment in long-chain
+40
+4.1 Lipid diﬀusion in myelin sheath
+fatty acids, cholesterol and galactosylceramides83) are characteristics of myelin mem-
+brane.
+Importantly, myelin membranes are not supported by the sub-membranous
+actin meshwork, as are plasma membranes in general. Instead, a meshwork compris-
+ing myelin basic protein (MBP) underlies this membrane, deﬁning the morphology of
+its architecture84,85. In this context, myelin emerges as a diﬀerential system in the
+investigation of membrane-organizing mechanisms.
+Here, we observe for the ﬁrst time lipid dynamics in myelin membrane, as well as
+address the inﬂuence of the underlying MBP meshwork on lipid mobility.
+Figure 4.2: Lipid diﬀusion in oligodendrocyte membrane sheets from oligoden-
+drocytes and in PtK2 cells - (A-C) Dapp(FWHM) dependencies for respectively PE,
+SM and GalCer diﬀusion in oligodendrocytes and PtK2 cells (n stands for the number of
+cells). (D-F) Summary of the data. ⋆⋆P <0.01, ⋆P <0.05, NS, not signiﬁcant (two-tailed
+unpaired t test). Error bars are standard error of the mean. Results of the statistical
+test on top of the columns representing FWHM ∼ 50 nm refer to comparison with the
+precedent column (FWHM = 240 nm).
+In order to assess lipid dynamics in myelin, we investigated lipid diﬀusion in primary
+cultures of oligodendrocytes, which form prominent myelin membrane sheets (Fig.4.1).
+Upon culturing on the glass cover slips these cells reproduce two major domains of
+in vivo myelin: ﬂat compact sheets that recapitulate myelin sheath, and non-compact
+41
+4. TRANSIENT TRAPPING OF PLASMA MEMBRANE MOLECULES
+membrane processes. We used ﬂuorescent analogues of the saturated sphingolipids sph-
+ingomyelin (SM) and galactosylceramide (GalCer), for that the correspondent endoge-
+nous lipids are abundant in myelin and therefore may be assumed to play an important
+role in myelin function. For comparison with a diﬀerent lipid group, we as well utilized
+a ﬂuorescent analogue of the saturated phosphoglycerolipid phosphatidylethanolamine
+(DPPE, here denoted by PE). The diﬀusion of these lipids has been previously inves-
+tigated by STED-FCS in the epithelial PtK2 cell line, where free diﬀusion of PE and
+prominent trapping diﬀusion of SM44 and GalCer47 was observed.
+Lipid diﬀusion was observed to be in general faster in myelin membranes of oligo-
+dendrocytes than in PtK2 cells (Fig.4.2). The phosphoglycerolipid PE was observed to
+freely diﬀuse in both oligodendrocytes and PtK2 cells, with a small variation of the mea-
+sured apparent diﬀusion coeﬃcients for diﬀerent observation diameters (Fig.4.2 A,D).
+However, contrasting to lipid diﬀusion observed in PtK2 cells, sphingolipids did not
+undergo strong trapping diﬀusion in oligodendrocyte membranes. In fact, SM diﬀusion
+was observed to be much less hindered in this system (Fig.4.2 B,E). GalCer featured
+trapping diﬀusion in myelin, however slightly less prominent than in PtK2 cells. A
+possible measure for the assessment of the signiﬁcance of trapping events in diﬀusion
+is the comparison between apparent diﬀusion coeﬃcients measured at diﬀerent obser-
+vation diameters. In this context, GalCer trapping in oligodendrocytes is shown to be
+weaker than in PtK2 cells for that the diﬀerence in Dapp at FWHM=240 nm and at
+FWHM∼ 50 nm is greater for PtK2 cells. These results suggest less sources of conﬁne-
+ment aﬀecting lipid diﬀusion in compact membranes sheets of oligodendrocytes than
+in the epithelial PtK2 cell.
+4.1.2
+Myelin basic protein modulates lipid diﬀusion in myelin mem-
+brane sheets
+In the previous chapter it was demonstrated how the sub-membranous actin cortex
+eﬀectively compartmentalizes the plasma membrane, modulating lipid diﬀusion.
+In
+this context, a system comprising a plasma membrane which is not bound to the actin
+cortex, as myelin membrane sheets, may be expected to feature special characteristics.
+In compact myelin membrane sheets, the underlying MBP meshwork possibly allows
+membrane-organizing mechanisms distinct from the organizing principles of plasma
+membranes supported by the actin cortex. In order to selectively investigate the inﬂu-
+ence of the underlying MBP meshwork on lipid diﬀusion, we observed lipid diﬀusion in
+PtK2 cells transfected with a chimeric construct consisting of MBP fused to GFP-label
+and transmembrane domain (MBP-TM-GFP)84. In the transfected cells, MBP gets
+anchored within the endoplasmatic reticulum membrane, and upon interactions with
+the negatively charged lipids in the opposed plasmalemma, it creates MBP-positive
+(MBP+) islands, highlighted by GFP. As in oligodednrocytes, MBP+ islands are de-
+42
+4.1 Lipid diﬀusion in myelin sheath
+prived of cortical actin and glycoproteins84 (Fig.4.3). The portions of plasma membrane
+of PtK2 cells within these platforms are henceforth referred to as “PtK2 MBP+”.
+Figure 4.3: PtK2 cells transfected with the chimeric construct MBP-TM-GFP
+- Visualization of platforms of MBP meshwork between the inner leaﬂet of the plasma
+membrane and the endoplasmatic reticulum in PtK2 cells. Scale bars are 10 µm. Im-
+ages with courtesy of Olena Steshenko (Max Planck Institute for Experimental Medicine,
+G¨ottingen).
+For each lipid type under investigation, diﬀusion in PtK2 MBP+ regions was signif-
+icantly faster than diﬀusion in both oligodendrocytes and control PtK2 cells (Fig.4.4).
+In addition, PE, SM and GalCer were observed to undergo free diﬀusion in PtK2 MBP+
+regions, where trapping was completely eliminated. This result strongly indicates that
+the insertion of MBP meshwork platforms onto the inner leaﬂet of the plasma membrane
+decreases the sources of membrane lateral heterogeneities, promoting free diﬀusion.
+4.1.3
+Discussion
+The fact that lipid diﬀusion is unconﬁned and remarkably faster in PtK2 MBP+ regions,
+as compared to control PtK2 cells, is in line with less conﬁned and faster lipid diﬀusion
+in oligodendrocytes, as compared to PtK2 cells. Moreover it indicates that lipid diﬀu-
+sion is modulated by the underlying MBP meshwork. In myelin membrane sheets of
+oligodendrocytes, fast diﬀusion may be hindered by the abundance of long-chain fatty
+acids, which might increase membrane viscosity. The role of MBP in promoting fast,
+unconﬁned diﬀusion is not assumed here to be necessarily an active one. Possibly, the
+simple extrusion of the actin cytoskeleton facilitates unconﬁned diﬀusion. In fact, the
+actin cytoskeleton, besides promoting compartmentalization in the plasma membrane,
+has also been observed to be involved in trapping events. For example, SM trapping
+diﬀusion in PtK2 cells was shown to be cytoskeleton-assisted, since treatment of cells
+with Latrunculin B suppressed trapping47. Nonetheless, trapping of lipids with large
+sugar head-groups such as gangliosides (or GalCer) were found to be less dependent on
+43
+4. TRANSIENT TRAPPING OF PLASMA MEMBRANE MOLECULES
+Figure 4.4: Lipid diﬀusion modulated by MBP - (A-C) Dapp(FWHM) dependencies
+for respectively PE, SM and GalCer diﬀusion in oligodendrocytes, PtK2, and PtK2 MBP+
+cells (n stands for the number of cells). (D-F) Summary of the data. ⋆⋆P <0.01, ⋆P <0.05,
+NS, not signiﬁcant (two-tailed unpaired t test). Error bars are standard error of the mean.
+Results of the statistical test on top of the columns representing FWHM ∼ 50 nm refer to
+comparison with the precedent column (FWHM = 240 nm).
+44
+4.2 Nanodomain assembly of Ras proteins
+the cytoskeleton47.
+Interestingly, in PtK2 MBP+ regions, all lipids investigated here diﬀuse (freely)
+with approximately the same diﬀusion coeﬃcient. Thus, in these regions, distinctions
+in diﬀusion characteristics that were before inherent to lipid types are not present any
+more, with diﬀerent lipids diﬀusing similarly. Yet in this context, it is worth noting
+that in PtK2 MBP+ regions, lipids diﬀuse at a diﬀusion coeﬃcient of approximately
+0.8 µm2/s. This value corresponds also to the ﬁtted free diﬀusion coeﬃcient (Dfree) for
+PE diﬀusion within compartments, in NRK and IA32 cells (Fig. 3.4). Furthermore,
+as demonstrated in the previous chapter, upon CK-666 treatment PE diﬀuses freely in
+NRK and IA32 cells with an apparent diﬀusion coeﬃcient of approximately 0.65 µm2/s.
+All that provides compelling indications that the underlying cortical cytoskeleton plays
+a critical role in membrane lateral heterogeneities, since either its depletion or extrusion
+result in free diﬀusion at similar diﬀusion coeﬃcients.
+However, these results also suggest the existence of other sources of conﬁnement
+in the plasma membrane, additionally to the actin cytoskeleton, since also in myelin
+membrane sheets of oligodendrocytes GalCer trapping diﬀusion was observed, although
+slightly less prominent than in PtK2 cells.
+Since this lipid is abundant in myelin,
+it may be speculated that the interaction of GalCer with other lipids, and possibly
+with proteins, plays a special role in the insulating and protective functions ascribed
+to myelin. The diﬀusion in myelin membrane sheets of lipids with long-chain fatty
+acids (21-24C) in their structure is an important question to be addressed in future
+research, due to their high abundance in this membrane.
+Here, we have employed
+ﬂuorescent lipid analogues with short-chain fatty acids (16-18C) in their structures,
+since the incorporation of long-chain lipid analogues into the plasma membrane of cells
+is technically challenging. New protocols and methods facilitating this incorporation
+may further help to shed light on membrane dynamics in this important biological
+system.
+4.2
+Nanodomain assembly of Ras proteins
+Ras is a family of proteins related to many signal transduction pathways. The malfunc-
+tion or abnormalities in these pathways may compromise numerous activities necessary
+for cell survival and replication, possibly allowing the abnormal cell proliferation that
+leads to cancer. Due to that fact, many signalling proteins were ﬁrst discovered by
+the identiﬁcation of their encoding genes, whose mutation was associated with can-
+cer86. Ras were among the ﬁrst oncogenes to be discovered, and in fact about 20%
+of all tumours present mutations in one of the Ras genes87. In humans, three Ras
+genes encode four distinct proteins: H-Ras, N-Ras, K-Ras4A and K-Ras4B, where K-
+Ras4A and K-Ras4B are originated from alternative splicing88. In its activated state,
+45
+4. TRANSIENT TRAPPING OF PLASMA MEMBRANE MOLECULES
+Ras binds to guanosine triphosphate, whereas in its neutral state it binds to guano-
+sine diphosphate. These two distinct states are in addition marked by conformational
+changes. Oncogenic mutations make Ras proteins to be in a perpetual activated state
+and consequently impair cell replication86.
+Although interaction mechanisms of Ras proteins have been studied in detail89, rel-
+atively little is known about speciﬁc interactions of these proteins in their native mem-
+branous environment. In the ﬁrst steps of signal transduction, Ras is attached to the
+inner leaﬂet of the plasma membrane by a 15-carbon farnesyl lipid tail90. Membrane-
+bound Ras forms transient nanoclusters91, whose stability was reported to be regulated
+by nanocluster-scaﬀolding proteins such as galectin-192. Importantly, nanoclustering of
+Ras proteins was identiﬁed as a necessary step in Ras-mediated signal transduction93.
+Mutants that represent diﬀerent conformers of Ras on the membrane were ob-
+served to have diﬀerent aﬃnities to the nanocluster-scaﬀolding protein galectin-194.
+In order to make a direct assessment of whether Ras conformers feature diﬀerent sig-
+nalling characteristics, we investigated the impact of galectin-1 regulation on dynamics
+of three H-Ras conformers in living cells.
+In this study, we used H-RasG12V and
+the orientation-mutants (mutants that feature a diﬀerent conformation) H-RasG12V
+R169A/K170A and H-RasG12V R128A/R135A. Previous studies indicated that the
+mutant H-RasG12V R128A/R135A was less reactive to galectin-1, while the mutant
+H-RasG12V R169A/K170A was more reactive94.
+For endogenous levels of galectin-1, STED-FCS revealed trapping diﬀusion for all
+three conformers, consistent with anomalous diﬀusion experienced by these proteins
+upon transient clustering (Fig.
+4.5).
+Upon down-regulation of galectin-1, trapping
+was suppressed in the diﬀusion of all three conformers. In particular, the orientation-
+mutant H-RasG12V R169A/K170A featured a completely diﬀerent diﬀusion pattern
+upon galectin-1 depletion, resembling compartmentalized diﬀusion. This is consistent
+with galectin-1 regulation aﬀecting more signiﬁcantly the dynamics of this orientation-
+mutant than the other conformers. Upon up-regulation of galectin-1, trapping diﬀusion
+was observed in all conformers, slightly more prominently for the mutant H-RasG12V
+R169A/K170A.
+In summary, STED-FCS evidenced that the diﬀusion of Ras proteins is regulated by
+galectin-1, consistent with previous studies which suggested this protein to stabilize Ras
+nanoclusters. Diﬀusion of the orientation-mutant H-RasG12V R169A/K170A was ob-
+served to be more aﬀected by the cellular concentration of galectin-1 than the diﬀusion
+of the other conformers. Since Ras-mediated signal transduction relies on nanocluster
+assemblies, these results indicate that mutations that aﬀect only the conformation of
+Ras proteins may signiﬁcantly impact their ability to mediate signalling events.
+46
+4.3 What is trapping? - Nanodomains and the diﬀusion law
+Figure
+4.5:
+Dynamics
+of
+three
+distinct
+H-Ras
+orientation-mutants
+-
+Dapp(FWHM) dependencies for H-Ras orientation-mutants show that galectin-1 (Gal-1)
+modulates the trapping strength of Ras diﬀusion. Furthermore, diﬀerent conformers have
+diﬀerent sensitivities to Gal-1 regulation.
+4.3
+What is trapping? - Nanodomains and the diﬀusion
+law
+STED-FCS is the diﬀraction-unlimited version of a general approach named spot-
+variation FCS53. In this approach, the apparent diﬀusion coeﬃcient obtained through
+systematic FCS measurements in diﬀerent observation diameters allows discerning com-
+partmentalized, free and trapping diﬀusion52,53. Trapping diﬀusion is characterized in
+this method by a decrease in apparent diﬀusion coeﬃcient as the observation area is
+decreased. Intuitively this dependency seems questionable, contrarily to the character-
+istic diﬀusion laws for free and compartmentalized diﬀusion, whose physical intuition
+seems straightforward. Otherwise stated, one could ask the following important ques-
+tion: How to compare the FCS data provided by a confocal measurement and the
+collection of data provided by several sub-diﬀraction FCS measurements?
+If these
+two sets of data are in principle diﬀerent, we would have a clear statistical percep-
+tion that the experiments carried out at sub-diﬀraction areas and those carried out
+at diﬀraction-limited areas possibly assess information of a diﬀerent nature, given the
+boundary conditions of our system. For free diﬀusion, these two sets of data assess
+the same information, whereas for compartmentalized diﬀusion they assess (averaged)
+diﬀusion across reﬂecting barriers in the ﬁrst case and diﬀusion within compartments
+in the second case. From this, their characteristic diﬀusion laws can be empirically
+deduced. Henceforth, a possible mathematical visualization of the diﬀusion law for
+trapping diﬀusion is described.
+Let S be a two-dimensional heterogeneous surface with area A where identical par-
+ticles can diﬀuse. Namely, S has certain regions where the viscosity is v1, others where
+viscosity is v2 and so on. Because the diﬀusing particles are identical, their diﬀusion
+47
+4. TRANSIENT TRAPPING OF PLASMA MEMBRANE MOLECULES
+coeﬃcient will depend only on the viscosity of the speciﬁc region where they diﬀuse,
+acquiring corresponding diﬀusion coeﬃcients D1, D2, and so on. Possible schemes for
+S are as follows:
+Figure 4.6: Possible partitions for a two-dimensional heterogeneous surface -
+The surface, of total area A, is subdivided in small squares of area a, where diﬀerent colors
+stand for diﬀerent viscosities.
+We assume here that the domains with diﬀerent viscosities in S are immobile. Let us
+suppose now that we can perform FCS measurements in areas which are much smaller
+than the domains, i.e., each one of these small areas has homogeneous viscosity. Let a
+stand for such small area, such that A/a = m. All the correspondent FCS experiments
+would then only probe free diﬀusion, though providing diﬀerent lateral diﬀusion times,
+due to diﬀerent viscosities. The average of the lateral diﬀusion time over the whole
+area then would be calculated as
+⟨τa⟩ ∝ 1
+m
+X
+x
+X
+y
+
+a
+D(x, y)
+
+(4.1)
+where the diﬀusion coeﬃcient D depends only on the coordinates x, y of the center
+of the square being measured. Each measurement corresponds to each small square,
+which is the step size of this “scanning” procedure. Eq. (4.1) can also be written as
+⟨τa⟩ ∝
+
+a
+D(x, y)
+
+x,y
+(4.2)
+where the average over the space was deﬁned as below
+⟨f(x, y)⟩x,y ≡ 1
+m
+X
+x
+X
+y
+f(x, y).
+(4.3)
+In order to form a perspective and compare two limiting situations, let us examine now
+48
+4.3 What is trapping? - Nanodomains and the diﬀusion law
+the case where the probed area is much larger than the domains. In this case, the FCS
+experiment “sees” the probed area as a homogeneous surface, not being able to detect
+small islands of heterogeneity. If we then model this situation as a process where the
+viscosity, and therefore eﬀective diﬀusion coeﬃcient through the probed area is being
+averaged out, we should expect the lateral diﬀusion time to be
+τA ∝
+A
+ P
+x
+P
+y
+D(x,y)
+m
+ =
+A
+⟨D(x, y)⟩x,y
+=
+ma
+⟨D(x, y)⟩x,y
+.
+(4.4)
+Eqs. (4.2) and (4.4) provide two results for the average transit time through the area
+S, calculated by two diﬀerent types of experiment. In order to bridge a connection
+between them, we would like to compare τA and m⟨τa⟩. For that purpose, we make use
+of the Jensen inequality, which can be stated as follows95: if F(f(ε)) is a functional of
+a function f(ε), then
+⟨F(f(ε))⟩ε ≥ F (⟨f(ε)⟩ε)
+(4.5)
+if and only if F is a convex functional of f within the interval in which the average is
+being calculated. Looking at the dependence of the transit diﬀusion time on the diﬀu-
+sion coeﬃcient, and keeping in mind that the convexity of a curve depends exclusively
+on the sign of its second derivative, we note that
+∂2
+∂D(x, y)2
+
+1
+D(x, y)
+
+=
+2
+D(x, y)3 > 0 ∀D(x, y) > 0
+(4.6)
+meaning that the transit time is a convex function of the diﬀusion coeﬃcient for all
+possible values of D(x, y). Therefore the inequality (4.5) is valid in any interval, where
+we identify F as τ and f as D. Hence,
+
+a
+D(x, y)
+
+x,y
+≥
+a
+⟨D(x, y)⟩x,y
+(4.7)
+from where we have τA ≤ m⟨τa⟩ and therefore Dapp(A) ≥ ⟨Dapp(a)⟩, as indicated by
+the trapping diﬀusion law.
+Of much importance here is noting that the decrease in the average apparent diﬀu-
+sion coeﬃcient observed in small areas is not a consequence of focusing the probed area
+on the domains of hindered diﬀusion. Considering very small domains homogeneously
+distributed, it would be possible that the percentage of the probed area occupied by the
+domains is the same for the STED and conventional FCS experiments. What accounts
+for the diﬀerence in the relative transit times and in the shape of the FCS curves is the
+sensitivity of the experiment to diﬀerent degrees of heterogeneity.
+49
+4. TRANSIENT TRAPPING OF PLASMA MEMBRANE MOLECULES
+50
+5
+Conclusions and outlook
+In his ingenious “Allegory of the Cave”96 Plato suggests two sources of delusional
+perception of reality: artefactual perceived images (stemming from the method of ob-
+servation) and attribution of substantial meaning and functions to irrelevant eﬀects.
+This idea ﬁnds direct resonance in the problems faced in plasma membrane research,
+where the dynamic organization and manifold vital functions ascribed to the plasma
+membrane are sought to be understood.
+The investigation of molecular interactions in their native biological environment
+is fundamentally limited by the method of observation, analogously to the uncertainty
+principle in quantum mechanics. In this context, the observation of molecular inter-
+actions in biological systems may always feature an artefactual component. This lim-
+itation can be overcome by observing the same eﬀects by means of diﬀerent methods.
+In this way, the genuine character of a phenomenon can be separated from artefactual
+components. By observing lipid compartmentalized diﬀusion with a minimally inva-
+sive probe via STED-FCS, the research presented in the chapter 3 constitutes the very
+ﬁrst validation of the prominent picket fence model for plasma membrane organization
+proposed by A. Kusumi about a decade ago26,27.
+This model hypothesizes that lipids and proteins in the plasma membrane are par-
+tially segregated into membrane compartments.
+It has been the subject of intense
+debate due to the fact that besides high-speed SPT, no other method has until now
+provided supporting evidence for this hypothesis29. Even worse, the SPT experiments
+reporting lipid compartmentalization employed exclusively artefact-prone lipid probes
+(gold particles27 and quantum dots60) in order to achieve the required temporal reso-
+lution. The artefactual character of these probes stems from the diﬃculty in validation
+of their valence towards the target molecule, possibly inducing oligomerization. In the
+early days of high-speed SPT, this problem was not regarded to be signiﬁcant97, since
+the Saﬀman-Delbr¨uck hydrodynamic model predicts that mobility in the plasma mem-
+brane has a weak, logarithmic dependence on the radius of the diﬀusing molecule10. A
+51
+5. CONCLUSIONS AND OUTLOOK
+corollary from the Saﬀman-Delbr¨uck model is that oligomerization of molecules would
+only slightly aﬀect their diﬀusion coeﬃcient. The very signiﬁcance of that hydrody-
+namic model was however questioned in 2006, when an experimental study led by Y.
+Gambin remarkably concluded that diﬀusion in membranes is not satisfactorily de-
+scribed by the the Saﬀman-Delbr¨uck equation98 and that oligomerization signiﬁcantly
+impacts membrane diﬀusion. These ﬁndings cast serious doubt on the results of stud-
+ies on membrane dynamics which employ polyvalent probes suchs as gold particles and
+quantum dots, and consequently render unfounded the initial evidence for the picket
+fence model. Using STED-FCS, we were able to redeem the picket fence model by
+observing compartmentalized diﬀusion of lipids with an alternative technique, utilizing
+ﬂuorescent lipid analogues.
+The picket fence model postulates the cortical actin networks to be ultimately re-
+sponsible for lipid and protein compartmentalized diﬀusion. These cell networks cur-
+rently lack well-established proteic markers, such that even the determination of their
+speciﬁc localization within a cell constitutes a challenging task99. Interestingly, our
+pioneer assessment of lipid diﬀusion upon Arp2/3 modulation pinpoints this protein as
+a major regulator of cortical actin networks, as compartmentalized diﬀusion of lipids is
+speciﬁcally suppressed by Arp2/3 inhibition.
+Furthermore, lipid diﬀusion was assessed for the ﬁrst time in myelin sheets (see
+chapter 4). Myelin sheets constitute a unique biological membrane which allows the
+rapid impulse transmission in vertebrates. Having a peculiar lipid composition and
+being supported by a meshwork of myelin basic protein, this membrane lacks cortical
+actin networks. In this study, myelin sheets were found to exhibit peculiar diﬀusion
+characteristics, where lipids tend to diﬀuse more freely than in the plasma membrane
+of the epithelial cell PtK2. As it was shown in chapter 2, the actin cortex in PtK2
+cells modulates lipid diﬀusion through Arp2/3-dependent networks. Importantly, upon
+extrusion of cortical actin in PtK2 cells (by the introduction of platforms comprising a
+meshwork of myelin basic protein) lipid diﬀusion was modulated by this new meshwork
+instead.
+This suggests myelin basic protein to be a modulator of lipid diﬀusion in
+myelin membrane sheets.
+Moreover, it corroborates the symbiotic character of the
+plasma membrane with respect to the proteinaceous sub-membranous structure that
+deﬁnes its morphology.
+In another set of experiments, we observed Ras proteins, which are involved in
+numerous important signalling pathways, and whose nanocluster properties are funda-
+mental to their signalling function. Ras proteins were found to undergo diﬀusion in the
+plasma membrane marked by trapping events. This diﬀusion pattern, consistent with
+transient nanoclustering, was shown to be regulated by the nanocluster-scaﬀold protein
+galectin-1. Furthermore, diﬀerent conformations of the Ras proteins allowed diﬀerent
+susceptibilities to galectin-1 regulation. We assessed diﬀusion of diﬀerent conformers of
+52
+5.1 Plasma membrane dynamics: perspectives for future research
+Ras in the plasma membrane, and observed speciﬁc nanocluster characteristics. From
+these results, it follows that mutations aﬀecting the conformation of these signalling
+proteins may also signiﬁcantly impact their function.
+5.1
+Plasma membrane dynamics: perspectives for future
+research
+Concerning the theoretical basis for the assessment of diﬀusion by STED-FCS, or spot-
+variation FCS in general, the development of new theoretical strategies could broaden
+the discernment of diﬀusion patterns by this method. In fact, the mathematical ana-
+logue of diﬀusion, i.e. the general problem of random walk, has been intensively stud-
+ied49. A recent study featured mathematically sophisticated implementations of ran-
+domly placed barriers, partially inspired by the picket fence model100.
+FCS is the
+time-domain counterpart of SPT, and is analogous to the time-domain counterpart of
+the random walk, namely, the classical gambler’s ruin problem from game theory101. In
+this classical problem, the expected duration of the game is analogous to the average
+transit time through the focal spot in FCS experiments. Analytical studies of spot-
+variation FCS in this background could shed light on potential further applications
+of this method. In particular, the current spot-variation FCS analysis (based on the
+diﬀusion law52) is analogous to the assessment of the expected duration of the game
+only. New insights could come from the assessment of the variance of the duration of
+the game, for example.
+A pitfall in plasma membrane research is the premature attribution of pivotal func-
+tions to observed eﬀects, which may delay further scientiﬁc progress. For example, one
+reason why the structural model of Danielli and Davson prevailed for such a long time
+was because it was believed that the monolayer of proteins adsorbed onto both sides
+of the lipid bilayer was essential to confer the required surface tension to the plasma
+membrane. The lipid rafts hypothesis may have suﬀered the same fate, despite being
+a milestone in plasma membrane research. Countless functions and fundamental im-
+plications have been postulated related to these lipid domains, with drug resistance23
+and increased levels of rafts in cancer cells102 being examples. Future research must
+clarify whether or not these attributions were premature.
+The validation of the picket fence model demonstrated in this work raises a new
+important question, namely, the determination of the precise structural mechanisms
+by which Arp2/3-dependent cortical actin networks exert compartmentalization in the
+plasma membrane. The adhesion between the cortical cytoskeleton and the plasma
+membrane is provided by speciﬁc lipids and proteins, in a cell type-dependent man-
+ner103.
+Investigation of lipid and protein diﬀusion upon modulation of membrane-
+cytoskeleton adhesion may bring new insights into our understanding of plasma mem-
+53
+5. CONCLUSIONS AND OUTLOOK
+brane organization.
+The currently evolving picture of the plasma membrane will surely undergo many
+interesting and exciting turns of events in the years to follow, especially concerning the
+role of membrane dynamics in signal transduction pathways. This is because the ﬁrst
+steps of signalling events take place at the plasma membrane, and deciphering their
+details is fundamental to the understanding of some of the most important questions
+concerning biological systems.
+A highly complex system with intricate membrane-organizing principles, possibly
+operating symbiotically with cortical actin networks and orchestrating dynamic tran-
+sient assemblies of lipids and proteins shall emerge as an increasingly more comprehen-
+sive concept.
+54
+References
+[1] Gorter, E. and Grendel, F. On bimolecular layers of lipoids on the chromocytes of
+the blood. The Journal of Experimental Medicine, 41(4):439–443, March 1925.
+[2] Luzio, J.P. and Thompson, R.J. Molecular Medical Biochemistry. Cambridge University Press,
+February 1990.
+[3] Danielli, J.F. and Davson, H. A contribution to the theory of permeability of thin
+ﬁlms. Journal of Cellular and Comparative Physiology, 5(4):495–508, 1935.
+[4] Bernal, J.D. and Crowfoot, D. X-Ray Photographs of Crystalline Pepsin. Nature,
+133:794–795, May 1934.
+[5] Robertson, J.D. The Membrane of the Living Cell. Scientiﬁc American, 206(4):64–72,
+April 1962.
+[6] Singer, S.J. and Nicolson, G.L.
+The ﬂuid mosaic model of the structure of cell
+membranes. Science (New York, N.Y.), 175(4023):720–731, February 1972.
+[7] Frye, L.D. and Edidin, M. The Rapid Intermixing of Cell Surface Antigens After For-
+mation of Mouse-Human Heterokaryons. Journal of Cell Science, 7(2):319–335, September
+1970.
+[8] Pohl, S.L., Birnbaumer, L. and Rodbell, M. The Glucagon-sensitive Adenyl Cyclase
+System in Plasma Membranes of Rat Liver I. PROPERTIES. Journal of Biological
+Chemistry, 246(6):1849–1856, March 1971.
+[9] Einstein, A. ¨Uber die von der molekularkinetischen Theorie der W¨arme geforderte
+Bewegung von in ruhenden Fl¨ussigkeiten suspendierten Teilchen. Annalen der Physik,
+17(8):549–560, May 1905.
+[10] Saffman, P.G. and Delbr¨uck, M. Brownian motion in biological membranes. Proceed-
+ings of the National Academy of Sciences, 72(8):3111–3113, August 1975.
+[11] Magde, D., Elson, E. and Webb, W.W. Thermodynamic Fluctuations in a Reacting
+System—Measurement by Fluorescence Correlation Spectroscopy.
+Physical Review
+Letters, 29(11):705–708, September 1972.
+[12] Axelrod, D., Koppel, D.E., Schlessinger, J., Elson, E. and Webb, W.W. Mobility
+measurement by analysis of ﬂuorescence photobleaching recovery kinetics. Biophysical
+Journal, 16(9):1055–1069, September 1976.
+55
+REFERENCES
+[13] Barak, L.S. and Webb, W.W. Fluorescent low density lipoprotein for observation
+of dynamics of individual receptor complexes on cultured human ﬁbroblasts. The
+Journal of Cell Biology, 90(3):595–604, September 1981.
+[14] de Brabander, M., Nuydens, R., Ishihara, A., Holifield, B., Jacobson, K. and Geerts,
+H. Lateral diﬀusion and retrograde movements of individual cell surface components
+on single motile cells observed with Nanovid microscopy. The Journal of cell biology,
+112(1):111–124, January 1991.
+[15] Edidin, M., Kuo, S.C. and Sheetz, M.P.
+Lateral movements of membrane gly-
+coproteins restricted by dynamic cytoplasmic barriers.
+Science (New York, N.Y.),
+254(5036):1379–1382, November 1991.
+[16] Kusumi, A., Sako, Y. and Yamamoto, M. Conﬁned lateral diﬀusion of membrane recep-
+tors as studied by single particle tracking (nanovid microscopy). Eﬀects of calcium-
+induced diﬀerentiation in cultured epithelial cells. Biophysical Journal, 65(5):2021–2040,
+November 1993.
+[17] Venkatakrishnan, G., McKinnon, C.A., Pilapil, C.G., Wolf, D.E. and Ross, A.H.
+Nerve growth factor receptors are preaggregated and immobile on responsive cells.
+Biochemistry, 30(11):2748–2753, January 1991.
+[18] Meer, G.V. Lipid Traﬃc in Animal Cells. Annual Review of Cell Biology, 5(1):247–275,
+1989.
+[19] Rodriguez-Boulan, E. and Nelson, W.J. Morphogenesis of the polarized epithelial
+cell phenotype. Science (New York, N.Y.), 245(4919):718–725, 1989.
+[20] Simons, K. and Ikonen, E. Functional rafts in cell membranes. Nature, 387(6633):569–
+572, June 1997.
+[21] Hancock, J.F.
+Lipid rafts:
+contentious only from simplistic standpoints.
+Nature
+Reviews Molecular Cell Biology, 7(6):456–462, June 2006.
+[22] Lingwood, D. and Simons, K.
+Lipid Rafts As a Membrane-Organizing Principle.
+Science, 327(5961):46–50, January 2010.
+[23] Leslie, M. Do Lipid Rafts Exist? Science, 334(6059):1046–1047, November 2011.
+[24] Simons, K. and Ehehalt, R. Cholesterol, lipid rafts, and disease. Journal of Clinical
+Investigation, 110(5):597–603, September 2002.
+[25] Munro, S. Lipid Rafts: Elusive or Illusive? Cell, 115(4):377–388, November 2003.
+[26] Kusumi, A., Nakada, C., Ritchie, K., Murase, K., Suzuki, K., Murakoshi, H., Kasai,
+R.S., Kondo, J. and Fujiwara, T. Paradigm shift of the plasma membrane concept
+from the two-dimensional continuum ﬂuid to the partitioned ﬂuid: high-speed single-
+molecule tracking of membrane molecules. Annual Review of Biophysics and Biomolecular
+Structure, 34(1):351–378, 2005.
+[27] Fujiwara, T., Ritchie, K., Murakoshi, H., Jacobson, K. and Kusumi, A. Phospholipids
+undergo hop diﬀusion in compartmentalized cell membrane. The Journal of Cell Biology,
+157(6):1071–1082, June 2002.
+56
+REFERENCES
+[28] Kusumi, A., Fujiwara, T.K., Chadda, R., Xie, M., Tsunoyama, T.A., Kalay, Z., Kasai,
+R.S. and Suzuki, K.G. Dynamic Organizing Principles of the Plasma Membrane that
+Regulate Signal Transduction: Commemorating the Fortieth Anniversary of Singer
+and Nicolson’s Fluid-Mosaic Model. Annual Review of Cell and Developmental Biology,
+28(1):215–250, 2012.
+[29] Abbott, A. Cell biology: Hopping fences. Nature, 433(7027):680–683, February 2005.
+[30] Jacobson, K., Sheets, E.D. and Simson, R.
+Revisiting the ﬂuid mosaic model of
+membranes. Science, 268(5216):1441–1442, June 1995.
+[31] Clausen, M.P. and Lagerholm, B.C.
+The probe rules in single particle tracking.
+Current protein & peptide science, 12(8):699–713, December 2011.
+[32] Kusumi, A., Shirai, Y.M., Koyama-Honda, I., Suzuki, K.G. and Fujiwara, T.K.
+Hi-
+erarchical organization of the plasma membrane: Investigations by single-molecule
+tracking vs. ﬂuorescence correlation spectroscopy. FEBS Letters, 584(9):1814–1823, May
+2010.
+[33] Gowrishankar, K., Ghosh, S., Saha, S., C., R., Mayor, S. and Rao, M. Active Re-
+modeling of Cortical Actin Regulates Spatiotemporal Organization of Cell Surface
+Molecules. Cell, 149(6):1353–1367, June 2012.
+[34] Born, M. and Wolf, E. Principles of Optics. Cambridge University Press, Cambridge, 2002.
+[35] Hell, S.W. and Wichmann, J.
+Breaking the diﬀraction resolution limit by stimu-
+lated emission: stimulated-emission-depletion ﬂuorescence microscopy. Optics letters,
+19(11):780–782, June 1994.
+[36] Hell, S.W.
+Toward ﬂuorescence nanoscopy.
+Nature Biotechnology, 21(11):1347–1355,
+November 2003.
+[37] Hell, S.W. Microscopy and its focal switch. Nature Methods, 6(1):24–32, January 2009.
+[38] Harke, B., Keller, J., Ullal, C.K., Westphal, V., Sch¨onle, A. and Hell, S.W. Reso-
+lution scaling in STED microscopy. Optics Express, 16(6):4154–4162, March 2008.
+[39] Hell, S.W. Far-Field Optical Nanoscopy. Science, 316(5828):1153–1158, May 2007.
+[40] Willig, K.I., Kellner, R.R., Medda, R., Hein, B., Jakobs, S. and Hell, S.W. Nanoscale
+resolution in GFP-based microscopy. Nature Methods, 3(9):721–723, September 2006.
+[41] Donnert, G., Keller, J., Medda, R., Andrei, M.A., Rizzoli, S.O., L¨uhrmann, R., Jahn,
+R., Eggeling, C. and Hell, S.W. Macromolecular-scale resolution in biological ﬂuo-
+rescence microscopy. Proceedings of the National Academy of Sciences, 103(31):11440–11445,
+August 2006.
+[42] Berning, S., Willig, K.I., Steffens, H., Dibaj, P. and Hell, S.W.
+Nanoscopy in a
+Living Mouse Brain. Science, 335(6068):551–551, February 2012.
+[43] G¨ottfert, F., Wurm, C.A., Mueller, V., Berning, S., Cordes, V.C., Honigmann, A.
+and Hell, S.W. Coaligned Dual-Channel STED Nanoscopy and Molecular Diﬀusion
+Analysis at 20 nm Resolution. Biophysical Journal, 105(1):L01–L03, July 2013.
+57
+REFERENCES
+[44] Eggeling, C. et al. Direct observation of the nanoscale dynamics of membrane lipids
+in a living cell. Nature, 457(7233):1159–1162, February 2009.
+[45] Kastrup, L., Blom, H., Eggeling, C. and Hell, S.W. Fluorescence Fluctuation Spec-
+troscopy in Subdiﬀraction Focal Volumes. Physical Review Letters, 94(17):178104, May
+2005.
+[46] Ringemann, C., Harke, B., Middendorff, C.v., Medda, R., Honigmann, A., Wagner,
+R., Leutenegger, M., Sch¨onle, A., Hell, S.W. and Eggeling, C. Exploring single-
+molecule dynamics with ﬂuorescence nanoscopy. New Journal of Physics, 11(10):103054,
+October 2009.
+[47] Mueller, V., Ringemann, C., Honigmann, A., Schwarzmann, G., Medda, R., Leuteneg-
+ger, M., Polyakova, S., Belov, V., Hell, S. and Eggeling, C.
+STED Nanoscopy
+Reveals Molecular Details of Cholesterol- and Cytoskeleton-Modulated Lipid Inter-
+actions in Living Cells. Biophysical Journal, 101(7):1651–1660, October 2011.
+[48] Mueller, V., Honigmann, A., Ringemann, C., Medda, R., Schwarzmann, G. and
+Eggeling, C. Chapter One - FCS in STED Microscopy: Studying the Nanoscale
+of Lipid Membrane Dynamics. In Sergey Y. Tetin, editor, Methods in Enzymology, Vol-
+ume 519 of Fluorescence Fluctuation Spectroscopy (FFS), Part B, pages 1–38. Academic Press,
+2013.
+[49] Chandrasekhar, S. Stochastic Problems in Physics and Astronomy. Reviews of Modern
+Physics, 15(1):1–89, January 1943.
+[50] Elson, E.L. and Magde, D. Fluorescence correlation spectroscopy. I. Conceptual basis
+and theory. Biopolymers, 13(1):1–27, 1974.
+[51] Van Orden, A., Fogarty, K. and Jung, J. Fluorescence ﬂuctuation spectroscopy: a
+coming of age story. Applied spectroscopy, 58(5):122A–137A, May 2004.
+[52] Wawrezinieck, L., Rigneault, H., Marguet, D. and Lenne, P.F. Fluorescence Corre-
+lation Spectroscopy Diﬀusion Laws to Probe the Submicron Cell Membrane Orga-
+nization. Biophysical Journal, 89(6):4029–4042, December 2005.
+[53] He, H.T. and Marguet, D.
+Detecting Nanodomains in Living Cell Membrane by
+Fluorescence Correlation Spectroscopy. Annual Review of Physical Chemistry, 62(1):417–
+436, 2011.
+[54] Murase, K., Fujiwara, T., Umemura, Y., Suzuki, K., Iino, R., Yamashita, H., Saito, M.,
+Murakoshi, H., Ritchie, K. and Kusumi, A. Ultraﬁne Membrane Compartments for
+Molecular Diﬀusion as Revealed by Single Molecule Techniques. Biophysical Journal,
+86(6):4075–4093, June 2004.
+[55] Mennicke, U. and Salditt, T. Preparation of Solid-Supported Lipid Bilayers by Spin-
+Coating. Langmuir, 18(21):8172–8177, October 2002.
+[56] Xu, K., Babcock, H.P. and Zhuang, X.
+Dual-objective STORM reveals three-
+dimensional ﬁlament organization in the actin cytoskeleton. Nature Methods, 9(2):185–
+188, February 2012.
+58
+REFERENCES
+[57] Lukinaviˇcius, G. et al.
+A near-infrared ﬂuorophore for live-cell super-resolution
+microscopy of cellular proteins. Nature Chemistry, 5(2):132–139, February 2013.
+[58] Engelman, D.M. Membranes are more mosaic than ﬂuid. Nature, 438(7068):578–580,
+December 2005.
+[59] Kwik, J., Boyle, S., Fooksman, D., Margolis, L., Sheetz, M.P. and Edidin, M. Mem-
+brane cholesterol, lateral mobility, and the phosphatidylinositol 4,5-bisphosphate-
+dependent organization of cell actin.
+Proceedings of the National Academy of Sciences,
+100(24):13964–13969, November 2003.
+[60] Clausen, M.P. and Lagerholm, B.C. Visualization of Plasma Membrane Compart-
+mentalization by High-Speed Quantum Dot Tracking. Nano Letters, 13(6):2332–2337,
+June 2013.
+[61] Heinemann, F., Vogel, S.K. and Schwille, P. Lateral Membrane Diﬀusion Modulated
+by a Minimal Actin Cortex. Biophysical Journal, 104(7):1465–1475, April 2013.
+[62] Lillemeier, B.F., Pfeiffer, J.R., Surviladze, Z., Wilson, B.S. and Davis, M.M. Plasma
+membrane-associated proteins are clustered into islands attached to the cytoskele-
+ton. Proceedings of the National Academy of Sciences, 103(50):18992–18997, December 2006.
+[63] Sachs, F. Stretch-Activated Ion Channels: What Are They? Physiology, 25(1):50–56,
+February 2010.
+[64] Wieser, S., Moertelmaier, M., Fuertbauer, E., Stockinger, H. and Sch¨utz, G.J.
+(Un)Conﬁned Diﬀusion of CD59 in the Plasma Membrane Determined by High-
+Resolution Single Molecule Microscopy.
+Biophysical Journal, 92(10):3719–3728,
+May
+2007.
+[65] Adler, J., Shevchuk, A.I., Novak, P., Korchev, Y.E. and Parmryd, I. Plasma mem-
+brane topography and interpretation of single-particle tracks. Nature Methods, 7(3):170–
+171, March 2010.
+[66] Wu, C., Asokan, S.B., Berginski, M.E., Haynes, E.M., Sharpless, N.E., Griffith, J.D.,
+Gomez, S.M. and Bear, J.E. Arp2/3 Is Critical for Lamellipodia and Response to
+Extracellular Matrix Cues but Is Dispensable for Chemotaxis. Cell, 148(5):973–987,
+March 2012.
+[67] Nolen, B.J., Tomasevic, N., Russell, A., Pierce, D.W., Jia, Z., McCormick, C.D.,
+Hartman, J., Sakowicz, R. and Pollard, T.D. Characterization of two classes of small
+molecule inhibitors of Arp2/3 complex. Nature, 460(7258):1031–1034, August 2009.
+[68] Rotty, J.D., Wu, C. and Bear, J.E. New insights into the regulation and cellular
+functions of the ARP2/3 complex.
+Nature Reviews Molecular Cell Biology, 14(1):7–12,
+January 2013.
+[69] Goley, E.D. and Welch, M.D. The ARP2/3 complex: an actin nucleator comes of
+age. Nature Reviews Molecular Cell Biology, 7(10):713–726, October 2006.
+[70] Yi, K., Unruh, J.R., Deng, M., Slaughter, B.D., Rubinstein, B. and Li, R. Dynamic
+maintenance of asymmetric meiotic spindle position through Arp2/3-complex-driven
+cytoplasmic streaming in mouse oocytes. Nature Cell Biology, 13(10):1252–1258, October
+2011.
+59
+REFERENCES
+[71] Chaigne, A. et al. A soft cortex is essential for asymmetric spindle positioning in
+mouse oocytes. Nature Cell Biology, 15(8):958–966, August 2013.
+[72] Zhou, K., Muroyama, A., Underwood, J., Leylek, R., Ray, S., Soderling, S.H. and
+Lechler, T. Actin-related protein2/3 complex regulates tight junctions and terminal
+diﬀerentiation to promote epidermal barrier formation.
+Proceedings of the National
+Academy of Sciences, page 201308419, September 2013.
+[73] Jaqaman, K., Kuwata, H., Touret, N., Collins, R., Trimble, W.S., Danuser, G. and
+Grinstein, S. Cytoskeletal Control of CD36 Diﬀusion Promotes Its Receptor and
+Signaling Function. Cell, 146(4):593–606, August 2011.
+[74] Suzuki, K.G.N., Fujiwara, T.K., Sanematsu, F., Iino, R., Edidin, M. and Kusumi, A.
+GPI-anchored receptor clusters transiently recruit Lyn and Gα for temporary cluster
+immobilization and Lyn activation: single-molecule tracking study 1. The Journal of
+Cell Biology, 177(4):717–730, May 2007.
+[75] Sahl, S.J., Leutenegger, M., Hilbert, M., Hell, S.W. and Eggeling, C. Fast molecu-
+lar tracking maps nanoscale dynamics of plasma membrane lipids. Proceedings of the
+National Academy of Sciences, 107(15):6829–6834, April 2010.
+[76] Suzuki, K.G.N., Kasai, R.S., Hirosawa, K.M., Nemoto, Y.L., Ishibashi, M., Miwa, Y.,
+Fujiwara, T.K. and Kusumi, A. Transient GPI-anchored protein homodimers are units
+for raft organization and function. Nature Chemical Biology, 8(9):774–783, September 2012.
+[77] Suzuki, K.G.N., Fujiwara, T.K., Edidin, M. and Kusumi, A. Dynamic recruitment of
+phospholipase Cγ at transiently immobilized GPI-anchored receptor clusters induces
+IP3–Ca2+ signaling:
+single-molecule tracking study 2.
+The Journal of Cell Biology,
+177(4):731–742, May 2007.
+[78] Daumas, F., Destainville, N., Millot, C., Lopez, A., Dean, D. and Salom´e, L. Conﬁned
+Diﬀusion Without Fences of a G-Protein-Coupled Receptor as Revealed by Single
+Particle Tracking. Biophysical Journal, 84(1):356–366, January 2003.
+[79] Mueller, V.J. Nanoscale studies of membrane dynamics via STED- Fluorescence Correlation
+Spectroscopy. Dissertation, July 2012.
+[80] Chepizhko, O. and Peruani, F. Diﬀusion, Subdiﬀusion, and Trapping of Active Par-
+ticles in Heterogeneous Media. Physical Review Letters, 111(16):160604, October 2013.
+[81] Morell, P. and Quarles, R.H. The Myelin Sheath, 1999.
+[82] Hartline, D.K. What is myelin? Neuron Glia Biology, 4(02):153–163, 2008.
+[83] Baumann, N. and Pham-Dinh, D. Biology of Oligodendrocyte and Myelin in the Mam-
+malian Central Nervous System. Physiological Reviews, 81(2):871–927, April 2001.
+[84] Aggarwal, S. et al. Myelin Membrane Assembly Is Driven by a Phase Transition of
+Myelin Basic Proteins Into a Cohesive Protein Meshwork. PLoS Biol, 11(6):e1001577,
+June 2013.
+[85] Aggarwal, S. et al.
+A Size Barrier Limits Protein Diﬀusion at the Cell Surface
+to Generate Lipid-Rich Myelin-Membrane Sheets. Developmental Cell, 21(3):445–456,
+September 2011.
+60
+REFERENCES
+[86] Goodsell, D.S.
+The Molecular Perspective:
+The ras Oncogene.
+The Oncologist,
+4(3):263–264, June 1999.
+[87] Downward, J. Targeting RAS signalling pathways in cancer therapy. Nature Reviews
+Cancer, 3(1):11–22, January 2003.
+[88] Pylayeva-Gupta, Y., Grabocka, E. and Bar-Sagi, D.
+RAS oncogenes:
+weaving a
+tumorigenic web. Nature Reviews Cancer, 11(11):761–774, November 2011.
+[89] Vetter, I.R. and Wittinghofer, A. The Guanine Nucleotide-Binding Switch in Three
+Dimensions. Science, 294(5545):1299–1304, November 2001.
+[90] Baker, N.M. and Der, C.J.
+Cancer:
+Drug for an ’undruggable’ protein.
+Nature,
+497(7451):577–578, May 2013.
+[91] Janosi, L., Li, Z., Hancock, J.F. and Gorfe, A.A. Organization, dynamics, and segre-
+gation of Ras nanoclusters in membrane domains. Proceedings of the National Academy
+of Sciences, 109(21):8097–8102, May 2012.
+[92] Belanis, L., Plowman, S.J., Rotblat, B., Hancock, J.F. and Kloog, Y. Galectin-1
+Is a Novel Structural Component and a Major Regulator of H-Ras Nanoclusters.
+Molecular Biology of the Cell, 19(4):1404–1414, April 2008.
+[93] Tian, T., Harding, A., Inder, K., Plowman, S., Parton, R.G. and Hancock, J.F. Plasma
+membrane nanoswitches generate high-ﬁdelity Ras signal transduction. Nature Cell
+Biology, 9(8):905–914, August 2007.
+[94] Abankwa, D., Gorfe, A.A., Inder, K. and Hancock, J.F. Ras membrane orientation
+and nanodomain localization generate isoform diversity.
+Proceedings of the National
+Academy of Sciences, 107(3):1130–1135, January 2010.
+[95] Andrade, D.M. and Hussein, M.S. Jensen inequalities for tunneling probabilities in
+complex systems. Physical Review C, 80(3):034610, September 2009.
+[96] Plato. The Republic. Penguin, London, 2007.
+[97] Damjanovich, S., Edidin, M., Szollosi, J. and Tron, L. Mobility and Proximity in Biological
+Membranes. Taylor & Francis, March 1994.
+[98] Gambin, Y., Lopez-Esparza, R., Reffay, M., Sierecki, E., Gov, N.S., Genest, M.,
+Hodges, R.S. and Urbach, W.
+Lateral mobility of proteins in liquid membranes
+revisited. Proceedings of the National Academy of Sciences of the United States of America,
+103(7):2098–2102, February 2006.
+[99] Salbreux, G., Charras, G. and Paluch, E. Actin cortex mechanics and cellular mor-
+phogenesis. Trends in Cell Biology, 22(10):536–545, October 2012.
+[100] Novikov, D.S., Fieremans, E., Jensen, J.H. and Helpern, J.A. Random walks with
+barriers. Nature Physics, 7(6):508–514, June 2011.
+[101] Feller, W. An introduction to probability theory and its applications. Volume I. J. Wiley &
+sons, New York; London; Sydney, 1968.
+61
+REFERENCES
+[102] Li, Y.C., Park, M.J., Ye, S.K., Kim, C.W. and Kim, Y.N. Elevated Levels of Cholesterol-
+Rich Lipid Rafts in Cancer Cells Are Correlated with Apoptosis Sensitivity Induced
+by Cholesterol-Depleting Agents. The American Journal of Pathology, 168(4):1107–1118,
+April 2006.
+[103] Sheetz, M.P., Sable, J.E. and D¨obereiner, H.G. Continuous Membrane-Cytoskeleton
+Adhesion Requires Continuous Accommodation to Lipid and Cytoskeleton Dynam-
+ics. Annual Review of Biophysics and Biomolecular Structure, 35(1):417–434, 2006.
+62
+Appendix A
+P
+value
+for
+com-
+parison
+between
+(FWHM = 40 nm)
+and (FWHM = 240
+nm) data in the same
+experiment
+P value for compari-
+son between (FWHM
+= 240 nm) data and
+control
+experiment
+(FWHM = 240 nm
+data)
+Untreated NRK cells (control)
+<0.0001
+N/A
+COase-treated NRK cells
+= 0.0105
+= 0.1871
+Blebbistatin-treated NRK cells
+<0.0001
+= 0.4113
+LatB-treated NRK cells
+= 0.0563
+<0.0001
+CK-666-treated NRK cells
+= 0.8741
+<0.0001
+Untreated NRK cells (cell body)
+= 0.0002
+= 0.0224
+Table A.1: List of P values for comparisons between results from STED-FCS
+experiments in NRK cells, as determined by two-tailed unpaired t test
+63
+A.
+P
+value
+for
+com-
+parison
+between
+(FWHM = 40 nm)
+and (FWHM = 240
+nm) data in the same
+experiment
+P value for compari-
+son between (FWHM
+= 240 nm) data and
+control
+experiment
+(FWHM = 240 nm
+data)
+Untreated IA32 cells (control)
+<0.0001
+N/A
+COase-treated IA32 cells
+<0.0001
+= 0.6046
+Blebbistatin-treated IA32 cells
+= 0.0005
+= 0.6048
+LatB-treated IA32 cells
+= 0.0582
+= 0.0210
+CK-666-treated IA32 cells
+= 0.4195
+<0.0001
+Untreated IA32 2xKD cells
+= 0.1486
+= 0.0190
+Table A.2: List of P values for comparisons between results from STED-FCS
+experiments in IA32 cells, as determined by two-tailed unpaired t test
+64
+Acknowledgements
+I would like to thank Prof. Stefan W. Hell for having given me the fantas-
+tic opportunity to work in the Nanobiophotonics Department at the Max
+Planck Institute for Biophysical Chemistry, from whose outstanding scien-
+tiﬁc environment I have beneﬁted so much. I am also very thankful to him
+for fully supporting and encouraging my projects throughout the years of
+my PhD.
+I would like to thank Dr. Christian Eggeling for co-supervising my PhD.
+I am deeply grateful for everything I have learned with this outstanding
+scientist, scientiﬁc-wise or otherwise; to whom I will always be indebted
+and who will always have my deepest respect.
+I am very thankful to Prof.
+J¨org Enderlein and Prof.
+Erwin Neher for
+composing my thesis committee, for being supportive and providing fruitful
+discussions during the thesis committee meetings.
+I thank as well the additional members of the examination board, Prof.
+Helmut Grubm¨uller and Prof. Mikael Simons, for showing interest in my
+work.
+I am greatly indebted to all my collaborators, who added so much knowl-
+edge and wisdom to my life.
+Working with these various persons, from
+various countries and with diverse scientiﬁc backgrounds, was certainly one
+of the things I enjoyed most during my PhD. My special thanks to Mathias
+Clausen, Olena Steshenko, Camilo Guzm´an, Virg´ınia Borroni, B. Christof-
+fer Lagerholm and Jan Keller-Findeisen, who have changed the way I see
+science and life in general.
+Special thanks also to Marcel Leutenegger, who has shared with me a small
+part of his great knowledge of so many things, and who was always willing
+to help.
+Thanks to Francisco Balzarotti, for being the best optical table-mate ever.
+Thanks to Veronika Mueller and Alf Honigmann , for sharing with me part
+of their knowledge and experience with STED-FCS, membrane dynamics,
+general optics, etc, which certainly enriched my research.
+Among the fundamentals to which the Nanobiophotonics group owes its
+excellence is the outstanding team of engineers and technicians who make
+unimaginable things possible. I am especially thankful to Tanja Gilat, Ellen
+Rothermel, Jaydev Jethwa and Marco Roose, for bringing solutions to al-
+most everything.
+Thanks to Sebastian Schubert, Nicolai Urban, Christian Eggeling, Olena
+Steshenko, Jaydev Jethwa and Alf Honigmann for proofreading parts of
+this thesis.
+I am especially indebted to my future husband, Sebastian Schubert, for
+having supported me unconditionally through the time of my PhD, in all
+possible ways. Para vocˆe, o meu sim.
+Finally, I would like to deeply thank my family, especially my parents and
+grandparents, to whom this thesis is dedicated, for having paved my way
+for the search of knowledge.
+Curriculum Vitae 
+ 
+Name:  
+Débora Machado Andrade 
+Address:  
+Zur Hohen Warte 21, 37077 Göttingen, Germany 
+Telephone: 
++49-551-201-2515 
+Email: 
+dmachad@gwdg.de 
+Date and place of birth: 
+22.05.1984, Aracaju, Brazil 
+Nationality: 
+Brazilian 
+Marital status: 
+single 
+Education 
+05/2002 – 05/2006 
+University of Sergipe, São Cristóvão, Sergipe, Brazil 
+Bachelor of Science in Physics 
+ 
+Bachelor’s thesis: "On the two-dimensional Hubbard model in different lattice geometries" 
+Supervisor: Prof. Dr. Cláudio Andrade Macedo 
+08/2006 – 09/2009 
+University of São Paulo (USP), São Paulo, Brazil  
+ 
+Master of Science in Physics 
+ 
+Master’s thesis: "Jensen’s inequality applied to probabilities of nuclear fusion" 
+Supervisor: Prof. Dr. Mahir Saleh Hussein 
+10/2007 – 12/2007 
+Max Planck Institute for Physics of Complex Systems (MPI-PKS), Dresden, Germany 
+Research: Effects of Medium on Quantum Tunneling, under the supervision of Prof. Dr. Mahir 
+Saleh Hussein (Martin Gutzwiller Fellow at MPI-PKS in 2007-2008). 
+Since 07/2010 
+International Max Planck Research School for Physics of Biological and Complex 
+Systems of the Max Planck Institute for Biophysical Chemistry (MPIbpc) and the 
+University of Göttingen, Göttingen, Germany 
+PhD Student at the Department of NanoBiophotonics at the MPIbpc (Prof. Dr. Stefan W. Hell) 
+Fellowships 
+2004 – 2006  
+University of Sergipe, São Cristóvão, Sergipe, Brazil 
+Undergraduate Research Fellowship of the Institute of Physics 
+2006 – 2010  
+University of São Paulo (USP), São Paulo, Brazil 
+Graduate Research Fellowship of the Department of Mathematical Physics 
+Since 07/2010 
+Max Planck Institute for Biophysical Chemistry, Göttingen, Germany 
+PhD Fellowship (from 11/2010 to 10/2012: Max Planck Society IMPRS-PBCS fellowship) 
+Awards 
+1999 
+Brazilian National Physics Olympiad for High School Students 
+Gold Medal 
+2009 
+Brazilian Society of Physics 
+Poster Prize at Jorge André Swieca Summer School on Theoretical Nuclear Physics for the 
+poster “Jensen inequality applied to the probability of quantum tunneling and to the fusion of 
+heavy ions” 
+2012 
+British Biophysical Society 
+Poster Prize at Faraday Discussion 161 – Lipids and Membrane Biophysics for the poster 
+“Lipid compartmentalization at the plasma membrane” 
+ 
+ 
+ 
+ 
+Débora Machado Andrade 
+ 
+ 
+ 
+ 
+Further Practical Experience 
+09/2004 – 12/2004 
+University of Sergipe, São Cristóvão, Sergipe, Brazil 
+Teaching assistant of Prof. Dr. André Maurício Conceição de Souza at the Institute of Physics 
+ 
+Task: Preparing the teaching material and teaching classes to the course “Introduction to 
+Physics” as part of a graduation program on agronomy especially developed by the University 
+of Sergipe for landless workers. 
+04/2010 – 05/2010 
+Institute for Research in Biomedicine (IRB), Bellinzona, Switzerland 
+Internship 
+ 
+Task: Supporting cell biology/immunology researchers in conducting experiments. 
+Other abilities 
+Languages 
+Portuguese (mother tongue), English (fluent in written and spoken; TOEFL IBT: 103 out of 
+120), Spanish (basics), French (basics), German (basics) 
+Computer 
+Fortran (good knowledge), Latex (basics), Microsoft Office (MS Word, MS Excel, MS 
+PowerPoint), Adobe Illustrator (good knowledge) 
+Publications 
+2009 
+Andrade, D.M.; Hussein, M.S.: Jensen inequalities for tunneling probabilities in complex 
+systems. Phys. Rev. C80 034610, 2009. 
+Submitted 
+Guzmán, C.; Šolman, M.; Ligabue, A.; Blaževitš, O.; Andrade, D.M.; Reymond, L.; Eggeling, 
+C.; Abankwa, D.: H-ras membrane-conformers allosterically couple to differentially Raf-
+recruitment through nanoclustering. 
+In preparation 
+Andrade, D.M.; Clausen, M.P.; Keller, J.; Mueller, V.; Göttfert, F.; Wu, C.; Bear, J.E.; Hell, 
+S.W.; Lagerholm, B.C.; Eggeling, C.: Lipids are compartmentalized at the plasma membrane 
+by Arp2/3-dependent cortical actin networks. 
+In preparation 
+Steshenko, O.; Andrade, D.M.; Mueller, V.; Hell, S.W.; Eggeling, C.; Simons, M. Myelin-basic 
+protein modulates lipid diffusion in myelin membrane sheets. 
+Conferences / Workshops 
+01/2009  
+Andrade, D.M.; Hussein, M.S.: Jensen inequality applied to the probability of quantum 
+tunneling and to the fusion of heavy ions. Poster at XIV Jorge André Swieca Summer School 
+on Theoretical Nuclear Physics. Itaipava, Brazil 
+09/2009 
+Andrade, D.M.; Hussein, M.S.: Jensen inequalities for tunneling probabilities in complex 
+systems. Poster at the International Workshop and Seminar on Tunneling and Scattering in 
+Complex Systems. Dresden, Germany 
+06/2012 
+Andrade, D.M.; Hell, S.W.; Eggeling, C.: Cell membrane inhomogeneity unraveled by STED-
+FCS. Oral presentation at 7th Annual Biphysics PhD Meeting. Holbæk, Denmark 
+09/2012 
+Andrade, D.M.; Clausen, M.P.; Lagerholm, C.B.; Hell, S.W.; Eggeling, C.: Lipid 
+compartmentalization at the plasma membrane. Poster at the Faraday Discussion 161 – 
+Lipids and Membrane Biophysics. London, England 
+02/2013 
+Andrade, D.M.; Clausen, M.P.; Lagerholm, C.B.; Hell, S.W.; Eggeling, C.: Lipid hop diffusion 
+on the plasma membrane – a STED-FCS investigation. Oral presentation at Biophysical 
+Society 57th Annual Meeting. Philadelphia, United States 
+ 
+ 
+Göttingen, November 27th, 2013 
+ 
